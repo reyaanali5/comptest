@@ -8,7 +8,9 @@ import Jupiter from './Components/Jupiter';
 import Mercury from './Components/Mercury';
 import Neptune from './Components/Neptune';
 import Saturn from './Components/Saturn';
-import Venus from './Components/Earth';
+import Venus from './Components/Venus';
+import Uranus from './Components/Uranus';
+import Mars from './Components/Mars';
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
                 <Link to="/Saturn"> Saturn</Link>
                 <Link to="/Uranus"> Uranus</Link>
                 <Link to="/Venus"> Venus</Link>
+                <Link to="/Mars"> Mars</Link>
+                
               </li>
             </ul>
           </nav>
@@ -36,6 +40,13 @@ function App() {
 
         <Routes> 
           <Route path="/Earth" element={<Earth />} /> 
+          <Route path="/Jupiter" element={<Jupiter />} /> 
+          <Route path="/Mercury" element={<Mercury />} /> 
+          <Route path="/Neptune" element={<Neptune />} /> 
+          <Route path="/Saturn" element={<Saturn />} /> 
+          <Route path="/Uranus" element={<Uranus />} /> 
+          <Route path="/Venus" element={<Venus />} /> 
+          <Route path="/Mars" element={<Mars />} /> 
         </Routes>
       </div>
     </Router>
