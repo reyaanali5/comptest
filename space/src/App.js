@@ -17,29 +17,39 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Welcome to our Space thing
-          </p>
+          <h1>The Universe</h1> {/* Added heading */}
           <nav>
-            <ul>
-              <li>
+            <div className="nav-circle">
+              <div className="planet-link-circle">
                 <Link to="/Earth">Earth</Link>
-                <Link to="/Jupiter"> Jupiter</Link>
-                <Link to="/Mercury"> Mercury</Link>
-                <Link to="/Neptune"> Neptune</Link>
-                <Link to="/Saturn"> Saturn</Link>
-                <Link to="/Uranus"> Uranus</Link>
-                <Link to="/Venus"> Venus</Link>
-                <Link to="/Mars"> Mars</Link>
-                
-              </li>
-            </ul>
+              </div>
+              <div className="planet-link-circle">
+                <Link to="/Jupiter">Jupiter</Link>
+              </div>
+              <div className="planet-link-circle">
+                <Link to="/Mercury">Mercury</Link>
+              </div>
+              <div className="planet-link-circle">
+                <Link to="/Neptune">Neptune</Link>
+              </div>
+              <div className="planet-link-circle">
+                <Link to="/Saturn">Saturn</Link>
+              </div>
+              <div className="planet-link-circle">
+                <Link to="/Uranus">Uranus</Link>
+              </div>
+              <div className="planet-link-circle">
+                <Link to="/Venus">Venus</Link>
+              </div>
+              <div className="planet-link-circle">
+                <Link to="/Mars">Mars</Link>
+              </div>
+            </div>
           </nav>
         </header>
 
         <Routes> 
-          <Route path="/Earth" element={<Earth />} /> 
+        <Route path="/Earth" element={<Earth />} /> 
           <Route path="/Jupiter" element={<Jupiter />} /> 
           <Route path="/Mercury" element={<Mercury />} /> 
           <Route path="/Neptune" element={<Neptune />} /> 
