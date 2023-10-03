@@ -41,12 +41,17 @@
   align-items: center;
   justify-content: center;
   margin: 10px;
+  transition: width 1s, height 1s, background-color 1s, transform 1s;
 }
 
 .planet-link-circle a {
   font-size: 20px;
   color: #fff;
   text-decoration: none;
+}
+
+.planet-link-circle:hover {
+  background-color: #212630;
 }
 
 .planet-link-circle a:active,
