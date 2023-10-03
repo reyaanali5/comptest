@@ -3,7 +3,9 @@ import React from 'react';
 function Mercury() {
   return (
     <div>
-      <h2>Mercury</h2>
+      <div className="planet-heading">
+        <h2>Mercury</h2>
+      </div>
     </div>
   );
 }

@@ -3,7 +3,9 @@ import React from 'react';
 function Jupiter() {
   return (
     <div>
-      <h2>Jupiter</h2>
+      <div className="planet-heading">
+        <h2>Jupiter</h2>
+      </div>
     </div>
   );
 }

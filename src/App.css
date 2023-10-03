@@ -1,13 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 
 .App {
   text-align: center;
-  
+  background-color: #212630;
+  min-height: 1000px;
+}
+
+.planet-heading {
+  font-family: "Orbitron", sans-serif;
+  color: aliceblue;
 }
 
 .App-header {
-  background-image: url('./images/wallpaperflare.com_wallpaper.jpg');
-  font-family: 'Orbitron', sans-serif;
+  background-image: url("./images/wallpaperflare.com_wallpaper.jpg");
+  font-family: "Orbitron", sans-serif;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -17,19 +23,17 @@
   justify-content: center;
   font-size: calc(30px);
   color: #fff; /* White text color */
-
 }
 
 .nav-circle {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .planet-link-circle {
-  
-  width: 120px; 
+  width: 120px;
   height: 120px;
   background-color: rgba(0, 0, 0, 1); /*background */
   border-radius: 50%;
@@ -41,20 +45,17 @@
 
 .planet-link-circle a {
   font-size: 20px;
-  color: #fff; 
+  color: #fff;
   text-decoration: none;
 }
 
 .planet-link-circle a:active,
-.planet-link-circle a:focus
-{
+.planet-link-circle a:focus {
   color: #fffbd6; /* Change current pages colour */
 }
-
 
 /* Reset list styles for the navigation */
 nav ul {
   list-style-type: none;
   padding: 0;
 }
-
