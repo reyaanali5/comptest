@@ -22,28 +22,28 @@ function App() {
           <h1>The Universe</h1> {/* Added heading */}
           <nav>
             <div className="nav-circle">
-            <div className="planet-link-circle">
+              <div className="planet-link-circle">
                 <Link to="/Mercury">Mercury</Link>
               </div>
-            <div className="planet-link-circle">
+              <div className="planet-link-circle">
                 <Link to="/Venus">Venus</Link>
               </div>
               <div className="planet-link-circle">
                 <Link to="/Earth">Earth</Link>
               </div>
-            <div className="planet-link-circle">
+              <div className="planet-link-circle">
                 <Link to="/Mars">Mars</Link>
               </div>
-             <div className="planet-link-circle">
+              <div className="planet-link-circle">
                 <Link to="/Jupiter">Jupiter</Link>
               </div>
-            <div className="planet-link-circle">
+              <div className="planet-link-circle">
                 <Link to="/Saturn">Saturn</Link>
               </div>
-            <div className="planet-link-circle">
+              <div className="planet-link-circle">
                 <Link to="/Uranus">Uranus</Link>
               </div>
-            <div className="planet-link-circle">
+              <div className="planet-link-circle">
                 <Link to="/Neptune">Neptune</Link>
               </div>
             </div>
@@ -51,14 +51,14 @@ function App() {
         </header>
 
         <JWTImage />
-        
-        <Routes> 
+
+        <Routes>
           <Route path="/Mercury" element={<Mercury />} />
-          <Route path="/Venus" element={<Venus />} /> 
+          <Route path="/Venus" element={<Venus />} />
           <Route path="/Earth" element={<Earth />} />
           <Route path="/Mars" element={<Mars />} />
-          <Route path="/Jupiter" element={<Jupiter />} /> 
-          <Route path="/Saturn" element={<Saturn />} /> 
+          <Route path="/Jupiter" element={<Jupiter />} />
+          <Route path="/Saturn" element={<Saturn />} />
           <Route path="/Uranus" element={<Uranus />} />
           <Route path="/Neptune" element={<Neptune />} />
         </Routes>

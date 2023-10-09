@@ -1,11 +1,11 @@
-const express = require ('express');
-const axios = require ('axios');
+const express = require('express');
+const axios = require('axios');
 const cors = require('cors'); // Use to only allow reqs from frontend once domain is created I think
 
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:3000'
+    origin: 'http://localhost:3000'
 }));
 
 app.get('/apod', async (req, res) => {

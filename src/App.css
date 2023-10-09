@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 
 .App {
+  margin: auto;
   text-align: center;
   background-color: #212630;
-  min-height: 1000px;
 }
 
 .planet-heading {
@@ -65,5 +65,27 @@ nav ul {
   padding: 0;
 }
 
+@media screen and (max-width: 500px) {
+  .planet-link-circle {
+    width: 80px;
+    height: 80px;
+    font-size: 14px;
+    margin: 10px;
+    padding: 4px;
+  }
+  .nav-circle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .planet-image {
+    width: 40%;
+    height: 40%;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
 
 /* JWT Latest */
