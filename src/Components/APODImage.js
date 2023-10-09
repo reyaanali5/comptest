@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function APODImage() {
     const [imageData, setImageData] = useState(null);
@@ -22,7 +23,7 @@ function APODImage() {
             {imageData ? (
                 <>
                     {imageData.media_type === "image" ? (
-                        <img src={imageData.url} alt="APOD Image" />
+                        <Link to={imageData.url} style={{ textDecoration: 'none', color: '#000' }}> <img className="apodImg" src={imageData.url} alt="APOD Image" /></Link>
                     ) : (
                         <iframe title="APOD Video" src={imageData.url}></iframe> // If a video is uploaded instead of an image
                     )}

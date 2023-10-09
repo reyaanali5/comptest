@@ -9,6 +9,11 @@
 .pageHeading {
   text-shadow: 2px 2px #505b72;
 }
+
+.apodImg {
+  height: 30%;
+  width: 70%;
+}
 .planet-heading {
   font-family: "Orbitron", sans-serif;
   color: aliceblue;
