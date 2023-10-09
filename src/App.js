@@ -11,7 +11,7 @@ import Jupiter from './Components/Jupiter';
 import Saturn from './Components/Saturn';
 import Uranus from './Components/Uranus';
 import Neptune from './Components/Neptune';
-import JWTImage from './Components/JWTImage';
+import JWTImage from './Components/APODImage';
 
 
 function App() {

@@ -8,14 +8,17 @@ app.use(cors({
   origin: 'http://localhost:3000'
 }));
 
-app.get('/telescopes/images/latest', async (req, res) => {
+app.get('/apod', async (req, res) => {
     try {
-        const response = await axios.get('https://webbapi.avatsaev.com/telescopes/1/images/latest');
-        console.log('API Response:', response.data);
+        const response = await axios.get('https://api.nasa.gov/planetary/apod', {
+            params: {
+                api_key: 'Us13y5RztgZArqKp5Bk6NHYLuVL8L6fLgFCRAHIS'
+            }
+        });
         res.json(response.data);
     } catch (error) {
-        console.error('Error fetching from JWT Tracker API:', error.message);
-        res.status(500).json({ error: error.message });
+        console.error("Error fetching from APOD API: ", error.response.data);
+        res.status(500).send(error.response.data || 'Error, unable to fetch from APOD API');
     }
 });
 
