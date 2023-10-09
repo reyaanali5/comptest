@@ -10,7 +10,7 @@ function Earth() {
 
     const apiKey = '3J+dWBW8QXneboHS6ry8Gg==KreuAlFtf9xLOw1V';
 
-    const apiUrl = 'https://api.api-ninjas.com/v1/planets?name=earth';
+    const apiUrl = 'https://api.api-ninjas.com/v1/planets?name=Earth';
 
     axios.get(apiUrl, {
       headers: {
