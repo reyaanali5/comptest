@@ -54,6 +54,7 @@ h2 {
   justify-content: center;
   margin: 10px;
   transition: width 1s, height 1s, background-color 1s, transform 1s;
+  transform: rotate(0deg);
 }
 
 .planet-link-circle a {
@@ -61,6 +62,46 @@ h2 {
   color: #fff;
   text-shadow: 2px 2px #505b72;
   text-decoration: none;
+}
+
+.merImg {
+  border-radius: 50%;
+  background-image: url("images/mercury.png");
+}
+
+.venImg {
+  border-radius: 50%;
+  background-image: url("images/venus.png");
+}
+
+.earImg {
+  border-radius: 50%;
+  background-image: url("images/earth.png");
+}
+
+.marImg {
+  border-radius: 50%;
+  background-image: url("images/mars.png");
+}
+
+.jupImg {
+  border-radius: 50%;
+  background-image: url("images/jupiter.png");
+}
+
+.satImg {
+  border-radius: 50%;
+  background-image: url("images/saturnNav.png");
+}
+
+.uraImg {
+  border-radius: 50%;
+  background-image: url("images/uranus.png");
+}
+
+.nepImg {
+  border-radius: 50%;
+  background-image: url("images/neptune.png");
 }
 
 .planet-link-circle:hover {
