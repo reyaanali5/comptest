@@ -3,14 +3,15 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
-import Earth from './Components/Earth';
-import Jupiter from './Components/Jupiter';
 import Mercury from './Components/Mercury';
-import Neptune from './Components/Neptune';
-import Saturn from './Components/Saturn';
 import Venus from './Components/Venus';
-import Uranus from './Components/Uranus';
+import Earth from './Components/Earth';
 import Mars from './Components/Mars';
+import Jupiter from './Components/Jupiter';
+import Saturn from './Components/Saturn';
+import Uranus from './Components/Uranus';
+import Neptune from './Components/Neptune';
+
 
 function App() {
   return (
@@ -20,43 +21,43 @@ function App() {
           <h1>The Universe</h1> {/* Added heading */}
           <nav>
             <div className="nav-circle">
-              <div className="planet-link-circle">
-                <Link to="/Earth">Earth</Link>
-              </div>
-              <div className="planet-link-circle">
-                <Link to="/Jupiter">Jupiter</Link>
-              </div>
-              <div className="planet-link-circle">
+            <div className="planet-link-circle">
                 <Link to="/Mercury">Mercury</Link>
               </div>
-              <div className="planet-link-circle">
-                <Link to="/Neptune">Neptune</Link>
-              </div>
-              <div className="planet-link-circle">
-                <Link to="/Saturn">Saturn</Link>
-              </div>
-              <div className="planet-link-circle">
-                <Link to="/Uranus">Uranus</Link>
-              </div>
-              <div className="planet-link-circle">
+            <div className="planet-link-circle">
                 <Link to="/Venus">Venus</Link>
               </div>
               <div className="planet-link-circle">
+                <Link to="/Earth">Earth</Link>
+              </div>
+            <div className="planet-link-circle">
                 <Link to="/Mars">Mars</Link>
+              </div>
+             <div className="planet-link-circle">
+                <Link to="/Jupiter">Jupiter</Link>
+              </div>
+            <div className="planet-link-circle">
+                <Link to="/Saturn">Saturn</Link>
+              </div>
+            <div className="planet-link-circle">
+                <Link to="/Uranus">Uranus</Link>
+              </div>
+            <div className="planet-link-circle">
+                <Link to="/Neptune">Neptune</Link>
               </div>
             </div>
           </nav>
         </header>
 
         <Routes> 
-        <Route path="/Earth" element={<Earth />} /> 
-          <Route path="/Jupiter" element={<Jupiter />} /> 
-          <Route path="/Mercury" element={<Mercury />} /> 
-          <Route path="/Neptune" element={<Neptune />} /> 
-          <Route path="/Saturn" element={<Saturn />} /> 
-          <Route path="/Uranus" element={<Uranus />} /> 
+          <Route path="/Mercury" element={<Mercury />} />
           <Route path="/Venus" element={<Venus />} /> 
-          <Route path="/Mars" element={<Mars />} /> 
+          <Route path="/Earth" element={<Earth />} />
+          <Route path="/Mars" element={<Mars />} />
+          <Route path="/Jupiter" element={<Jupiter />} /> 
+          <Route path="/Saturn" element={<Saturn />} /> 
+          <Route path="/Uranus" element={<Uranus />} />
+          <Route path="/Neptune" element={<Neptune />} />
         </Routes>
       </div>
     </Router>
