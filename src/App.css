@@ -6,9 +6,16 @@
   background-color: #212630;
 }
 
+.pageHeading {
+  text-shadow: 2px 2px #505b72;
+}
 .planet-heading {
   font-family: "Orbitron", sans-serif;
   color: aliceblue;
+}
+
+h2 {
+  text-shadow: 5px 5px 8px #505b72;
 }
 
 .App-header {
@@ -47,6 +54,7 @@
 .planet-link-circle a {
   font-size: 20px;
   color: #fff;
+  text-shadow: 2px 2px #505b72;
   text-decoration: none;
 }
 
@@ -63,6 +71,11 @@
 nav ul {
   list-style-type: none;
   padding: 0;
+}
+
+.explanation {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 @media screen and (max-width: 500px) {

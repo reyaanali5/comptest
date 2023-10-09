@@ -19,7 +19,7 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <h1>The Universe</h1> {/* Added heading */}
+          <div className="pageHeading"> <h1>The Universe</h1></div> {/* Added heading */}
           <nav>
             <div className="nav-circle">
               <div className="planet-link-circle">
