@@ -23,28 +23,28 @@ function App() {
           <nav>
             <div className="nav-circle">
               <div className="planet-link-circle">
-                <Link to="/Mercury">Mercury</Link>
+                <Link to="/Mercury"><div className="planet-link-circle">Mercury</div></Link>
               </div>
               <div className="planet-link-circle">
-                <Link to="/Venus">Venus</Link>
+                <Link to="/Venus"><div className="planet-link-circle">Venus</div></Link>
               </div>
               <div className="planet-link-circle">
-                <Link to="/Earth">Earth</Link>
+                <Link to="/Earth"><div className="planet-link-circle">Earth</div></Link>
               </div>
               <div className="planet-link-circle">
-                <Link to="/Mars">Mars</Link>
+                <Link to="/Mars"><div className="planet-link-circle">Mars</div></Link>
               </div>
               <div className="planet-link-circle">
-                <Link to="/Jupiter">Jupiter</Link>
+                <Link to="/Jupiter"><div className="planet-link-circle">Jupiter</div></Link>
               </div>
               <div className="planet-link-circle">
-                <Link to="/Saturn">Saturn</Link>
+                <Link to="/Saturn"><div className="planet-link-circle">Saturn</div></Link>
               </div>
               <div className="planet-link-circle">
-                <Link to="/Uranus">Uranus</Link>
+                <Link to="/Uranus"><div className="planet-link-circle">Uranus</div></Link>
               </div>
               <div className="planet-link-circle">
-                <Link to="/Neptune">Neptune</Link>
+                <Link to="/Neptune"><div className="planet-link-circle">Neptune</div></Link>
               </div>
             </div>
           </nav>
