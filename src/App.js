@@ -11,6 +11,7 @@ import Jupiter from './Components/Jupiter';
 import Saturn from './Components/Saturn';
 import Uranus from './Components/Uranus';
 import Neptune from './Components/Neptune';
+import JWTImage from './Components/JWTImage';
 
 
 function App() {
@@ -49,6 +50,8 @@ function App() {
           </nav>
         </header>
 
+        <JWTImage />
+        
         <Routes> 
           <Route path="/Mercury" element={<Mercury />} />
           <Route path="/Venus" element={<Venus />} /> 

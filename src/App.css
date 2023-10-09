@@ -64,3 +64,17 @@ nav ul {
   list-style-type: none;
   padding: 0;
 }
+
+
+/* JWT Latest */
+
+.JWT-Image-section {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.JWT-Image-section img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 25pxl
+}
