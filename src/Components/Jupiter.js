@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import jupiterImage from '../images/jupiter.png'; // Import the image
 
 function Jupiter() {
   const [planetData, setPlanetData] = useState(null);
@@ -29,11 +30,14 @@ function Jupiter() {
       </div>
       <div className="planet-info">
         {planetData && (
-          <div>
-            <p>Mass: {planetData.mass} Jupiters</p>
-            <p>Radius: {planetData.radius} Jupiters</p>
-            <p>Orbital Period: {planetData.period} Earth days</p>
-            <p>Temperature: {planetData.temperature} Kelvin</p>
+          <div className="planet-container">
+            <img src={jupiterImage} alt="Jupiter" className="planet-image" />
+            <div className="planet-text">
+              <p>Mass: {planetData.mass} Jupiters</p>
+              <p>Radius: {planetData.radius} Jupiters</p>
+              <p>Orbital Period: {planetData.period} Earth days</p>
+              <p>Temperature: {planetData.temperature} Kelvin</p>
+            </div>
           </div>
         )}
       </div>
