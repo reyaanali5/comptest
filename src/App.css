@@ -72,84 +72,63 @@ h2 {
   text-decoration: none;
 }
 
-/* .merImg {
-  border-radius: 50%;
-  background-image: url("images/mercury.png");
-}
-
-.venImg {
-  border-radius: 50%;
-  background-image: url("images/venus.png");
-}
-
-.earImg {
-  border-radius: 50%;
-  background-image: url("images/earth.png");
-}
-
-.marImg {
-  border-radius: 50%;
-  background-image: url("images/mars.png");
-}
-
-.jupImg {
-  border-radius: 50%;
-  background-image: url("images/jupiter.png");
-}
-
-.satImg {
-  border-radius: 50%;
-  background-image: url("images/saturnNav.png");
-}
-
-.uraImg {
-  border-radius: 50%;
-  background-image: url("images/uranus.png");
-}
-
-.nepImg {
-  border-radius: 50%;
-  background-image: url("images/neptune.png");
-} */
-
 .merImg :hover {
   background-image: url("images/mercury.png");
   background-size: cover;
+  color: #000;
+  font-weight: bold;
+  text-shadow: -1px 0 #6a186a, 0 1px #6a186a, 1px 0 #6a186a, 0 -1px #6a186a;
 }
 
 .venImg :hover {
   background-image: url("images/venus.png");
   background-size: cover;
+  color: #000;
+  font-weight: bold;
+  text-shadow: -1px 0 #6a186a, 0 1px #6a186a, 1px 0 #6a186a, 0 -1px #6a186a;
 }
 
 .earImg :hover {
   background-image: url("images/earth.png");
   background-size: cover;
+  font-weight: bold;
+  text-shadow: -2px 0 #6a186a, 0 2px #6a186a, 2px 0 #6a186a, 0 -2px #6a186a;
 }
 
 .marImg :hover {
   background-image: url("images/mars.png");
   background-size: cover;
+  font-weight: bold;
+  text-shadow: -2px 0 #6a186a, 0 2px #6a186a, 2px 0 #6a186a, 0 -2px #6a186a;
 }
 
 .jupImg :hover {
   background-image: url("images/jupiter.png");
   background-size: cover;
+  color: #000;
+  font-weight: bold;
+  text-shadow: -1px 0 #6a186a, 0 1px #6a186a, 1px 0 #6a186a, 0 -1px #6a186a;
 }
 
 .satImg :hover {
   background-image: url("images/saturn.png");
   background-size: cover;
+  font-weight: bold;
+  text-shadow: -2px 0 #6a186a, 0 2px #6a186a, 2px 0 #6a186a, 0 -2px #6a186a;
 }
 
 .uraImg :hover {
   background-image: url("images/uranus.png");
   background-size: cover;
+  font-weight: bold;
+  text-shadow: -2px 0 #6a186a, 0 2px #6a186a, 2px 0 #6a186a, 0 -2px #6a186a;
 }
 
 .nepImg :hover {
   background-image: url("images/neptune.png");
   background-size: cover;
+  font-weight: bold;
+  text-shadow: -2px 0 #6a186a, 0 2px #6a186a, 2px 0 #6a186a, 0 -2px #6a186a;
 }
 
 .planet-link-circle a:active,
