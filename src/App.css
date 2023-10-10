@@ -55,6 +55,8 @@ h2 {
   height: 120px;
   background-color: rgba(0, 0, 0, 1); /*background */
   border-radius: 50%;
+  border-left: 1px solid aliceblue;
+  border-top: 1px solid aliceblue;
   display: flex;
   align-items: center;
   justify-content: center;
