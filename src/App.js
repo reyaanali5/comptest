@@ -19,7 +19,7 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <div className="pageHeading"> <h1>The Universe</h1></div> {/* Added heading */}
+          <div className="pageHeading"><Link to="/"> <h1>The Universe</h1></Link></div> {/* Added heading */}
           <nav>
             <div className="nav-circle">
               <div className="planet-link-circle">
@@ -69,6 +69,7 @@ function App() {
 
 
         <Routes>
+          <Route path="/" element={<JWTImage />} />
           <Route path="/Mercury" element={<Mercury />} />
           <Route path="/Venus" element={<Venus />} />
           <Route path="/Earth" element={<Earth />} />
@@ -78,7 +79,7 @@ function App() {
           <Route path="/Uranus" element={<Uranus />} />
           <Route path="/Neptune" element={<Neptune />} />
         </Routes>
-        <JWTImage />
+
       </div>
     </Router>
   );

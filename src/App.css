@@ -8,6 +8,12 @@
 
 .pageHeading {
   text-shadow: 2px 2px #505b72;
+  text-decoration: none;
+}
+
+.pageHeading a {
+  color: aliceblue;
+  text-decoration: none;
 }
 
 .apodImg {
