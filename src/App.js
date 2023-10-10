@@ -79,7 +79,6 @@ function App() {
           <Route path="/Uranus" element={<Uranus />} />
           <Route path="/Neptune" element={<Neptune />} />
         </Routes>
-
       </div>
     </Router>
   );

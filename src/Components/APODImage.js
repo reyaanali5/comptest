@@ -30,7 +30,11 @@ function APODImage() {
                     <p className="explanation">{imageData.explanation}</p>
                 </>
             ) : <p>Loading...</p>}
+            <footer>
+                <div className="footer-content">The Universe Copright - 2023  </div>
+            </footer>
         </div>
+
     );
 }
 

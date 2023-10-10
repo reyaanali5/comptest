@@ -7,7 +7,7 @@ function Jupiter() {
 
   useEffect(() => {
     const apiKey = '3J+dWBW8QXneboHS6ry8Gg==KreuAlFtf9xLOw1V';
-    
+
     const apiUrl = 'https://api.api-ninjas.com/v1/planets?name=Jupiter';
 
     axios.get(apiUrl, {
@@ -15,12 +15,12 @@ function Jupiter() {
         'X-Api-Key': apiKey,
       },
     })
-    .then((response) => {
-      setPlanetData(response.data[0]); 
-    })
-    .catch((error) => {
-      console.error('API Error:', error);
-    });
+      .then((response) => {
+        setPlanetData(response.data[0]);
+      })
+      .catch((error) => {
+        console.error('API Error:', error);
+      });
   }, []);
 
   return (
@@ -41,6 +41,9 @@ function Jupiter() {
           </div>
         )}
       </div>
+      <footer>
+        <div className="footer-content">The Universe Copright - 2023  </div>
+      </footer>
     </div>
   );
 }
