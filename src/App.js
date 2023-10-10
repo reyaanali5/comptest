@@ -32,7 +32,7 @@ function MainContent() {
 
           <div className = "content-wrapper">
             <Routes>
-                <Route path="/" element={showDefault ? <APODImage /> : null} />
+                <Route path="/" element={<APODImage /> } />
                 <Route path="/Mercury" element={<Mercury />} />
                 <Route path="/Venus" element={<Venus />} />
                 <Route path="/Earth" element={<Earth />} />
