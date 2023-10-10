@@ -188,4 +188,23 @@ nav ul {
   }
 }
 
-/* JWT Latest */
+/* Close button */
+
+.close-button {
+  position: absolute;
+  right: 50px;
+  background-color: transparent;
+  font-size: 50px;
+  color: white;
+  z-index: 10;
+  border: none;
+  cursor: pointer;
+}
+
+.content-wrapper {
+  position: relative;
+}
+
+.content-container {
+  position: relative;
+}

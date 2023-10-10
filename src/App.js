@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
@@ -14,18 +15,22 @@ import Neptune from './Components/Neptune';
 import APODImage from './Components/APODImage';
 
 function MainContent() {
+    const location = useLocation();
     const navigate = useNavigate();
     const [showDefault, setShowDefault] = useState(true);
 
+    const isContentActive = location.pathname !== "/";
+
     const handleCloseContent = () => {
-      setShowDefault(false);
+        setShowDefault(false);
         navigate("/");
     };
 
     return (
-        <>
-            <button onClick={handleCloseContent} className="close-button">Close</button>
+        <div className = "content-container">
+            {isContentActive && <button onClick={handleCloseContent} className="close-button">✖</button>}
 
+          <div className = "content-wrapper">
             <Routes>
                 <Route path="/" element={showDefault ? <APODImage /> : null} />
                 <Route path="/Mercury" element={<Mercury />} />
@@ -37,7 +42,8 @@ function MainContent() {
                 <Route path="/Uranus" element={<Uranus />} />
                 <Route path="/Neptune" element={<Neptune />} />
             </Routes>
-        </>
+          </div>
+        </div>
     );
 }
 
