@@ -27,86 +27,86 @@ function MainContent() {
     };
 
     return (
-        <div className = "content-container">
+        <div className="content-container">
             {isContentActive && <button onClick={handleCloseContent} className="close-button">✖</button>}
 
-          <div className = "content-wrapper">
-            <Routes>
-                <Route path="/" element={<APODImage /> } />
-                <Route path="/Mercury" element={<Mercury />} />
-                <Route path="/Venus" element={<Venus />} />
-                <Route path="/Earth" element={<Earth />} />
-                <Route path="/Mars" element={<Mars />} />
-                <Route path="/Jupiter" element={<Jupiter />} />
-                <Route path="/Saturn" element={<Saturn />} />
-                <Route path="/Uranus" element={<Uranus />} />
-                <Route path="/Neptune" element={<Neptune />} />
-            </Routes>
-          </div>
+            <div className="content-wrapper">
+                <Routes>
+                    <Route path="/" element={<APODImage />} />
+                    <Route path="/Mercury" element={<Mercury />} />
+                    <Route path="/Venus" element={<Venus />} />
+                    <Route path="/Earth" element={<Earth />} />
+                    <Route path="/Mars" element={<Mars />} />
+                    <Route path="/Jupiter" element={<Jupiter />} />
+                    <Route path="/Saturn" element={<Saturn />} />
+                    <Route path="/Uranus" element={<Uranus />} />
+                    <Route path="/Neptune" element={<Neptune />} />
+                </Routes>
+            </div>
         </div>
     );
 }
 
 function App() {
     return (
-      <Router>
-        <div className="App">
-          <header className="App-header">
-            <div className="pageHeading"><Link to="/"> <h1>The Universe</h1></Link></div>
+        <Router>
+            <div className="App">
+                <header className="App-header">
+                    <div className="pageHeading"><Link to="/"> <h1>The Universe</h1></Link></div>
 
-            <nav>
-              <div className="nav-circle">
-                <div className="planet-link-circle">
-                    <div className='merImg'>
-                        <Link to="/Mercury"><div className="planet-link-circle">Mercury</div></Link>
-                    </div>
-                </div>
-                <div className="planet-link-circle">
-                    <div className='venImg'>
-                        <Link to="/Venus"><div className="planet-link-circle">Venus</div></Link>
-                    </div>
-                </div>
-                <div className="planet-link-circle">
-                    <div className='earImg'>
-                        <Link to="/Earth"><div className="planet-link-circle">Earth</div></Link>
-                    </div>
-                </div>
-                <div className="planet-link-circle">
-                    <div className='marImg'>
-                        <Link to="/Mars"><div className="planet-link-circle">Mars</div></Link>
-                    </div>
-                </div>
-                <div className="planet-link-circle">
-                    <div className='jupImg'>
-                        <Link to="/Jupiter"><div className="planet-link-circle">Jupiter</div></Link>
-                    </div>
-                </div>
-                <div className="planet-link-circle">
-                    <div className='satImg'>
-                        <Link to="/Saturn"><div className="planet-link-circle">Saturn</div></Link>
-                    </div>
-                </div>
-                <div className="planet-link-circle">
-                    <div className='uraImg'>
-                        <Link to="/Uranus"><div className="planet-link-circle">Uranus</div></Link>
-                    </div>
-                </div>
-                <div className="planet-link-circle">
-                    <div className='nepImg'>
-                        <Link to="/Neptune"><div className="planet-link-circle">Neptune</div></Link>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-            </header>
+                    <nav>
+                        <div className="nav-circle">
+                            <div className="planet-link-circle">
+                                <div className='merImg'>
+                                    <Link to="/Mercury"><div className="planet-link-circle">Mercury</div></Link>
+                                </div>
+                            </div>
+                            <div className="planet-link-circle">
+                                <div className='venImg'>
+                                    <Link to="/Venus"><div className="planet-link-circle">Venus</div></Link>
+                                </div>
+                            </div>
+                            <div className="planet-link-circle">
+                                <div className='earImg'>
+                                    <Link to="/Earth"><div className="planet-link-circle">Earth</div></Link>
+                                </div>
+                            </div>
+                            <div className="planet-link-circle">
+                                <div className='marImg'>
+                                    <Link to="/Mars"><div className="planet-link-circle">Mars</div></Link>
+                                </div>
+                            </div>
+                            <div className="planet-link-circle">
+                                <div className='jupImg'>
+                                    <Link to="/Jupiter"><div className="planet-link-circle">Jupiter</div></Link>
+                                </div>
+                            </div>
+                            <div className="planet-link-circle">
+                                <div className='satImg'>
+                                    <Link to="/Saturn"><div className="planet-link-circle">Saturn</div></Link>
+                                </div>
+                            </div>
+                            <div className="planet-link-circle">
+                                <div className='uraImg'>
+                                    <Link to="/Uranus"><div className="planet-link-circle">Uranus</div></Link>
+                                </div>
+                            </div>
+                            <div className="planet-link-circle">
+                                <div className='nepImg'>
+                                    <Link to="/Neptune"><div className="planet-link-circle">Neptune</div></Link>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
 
-            <MainContent />
+                <MainContent />
 
-            <footer>
-                <div className="footer-content">The Universe <div className='copyright'>2023 </div> </div>
-            </footer>
-        </div>
-      </Router>
+                <footer>
+                    <div className="footer-content">The Universe <div className='copyright'>2023 </div> </div>
+                </footer>
+            </div>
+        </Router>
     );
 }
 

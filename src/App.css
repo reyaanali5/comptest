@@ -53,7 +53,7 @@ h2 {
 .planet-link-circle {
   width: 120px;
   height: 120px;
-  background-color: rgba(0, 0, 0, 1); /*background */
+  background-color: rgba(0, 0, 0, 1);
   border-radius: 50%;
   border-left: 1px solid aliceblue;
   border-top: 1px solid aliceblue;
@@ -67,12 +67,12 @@ h2 {
 
 .planet-link-circle a {
   font-size: 20px;
-  color: #fff;
-  text-shadow: 2px 2px #505b72;
+  color: aliceblue;
+  text-shadow: 3px 3px 2px #6a186a;
   text-decoration: none;
 }
 
-.merImg {
+/* .merImg {
   border-radius: 50%;
   background-image: url("images/mercury.png");
 }
@@ -110,10 +110,46 @@ h2 {
 .nepImg {
   border-radius: 50%;
   background-image: url("images/neptune.png");
+} */
+
+.merImg :hover {
+  background-image: url("images/mercury.png");
+  background-size: cover;
 }
 
-.planet-link-circle:hover {
-  background-color: #212630;
+.venImg :hover {
+  background-image: url("images/venus.png");
+  background-size: cover;
+}
+
+.earImg :hover {
+  background-image: url("images/earth.png");
+  background-size: cover;
+}
+
+.marImg :hover {
+  background-image: url("images/mars.png");
+  background-size: cover;
+}
+
+.jupImg :hover {
+  background-image: url("images/jupiter.png");
+  background-size: cover;
+}
+
+.satImg :hover {
+  background-image: url("images/saturn.png");
+  background-size: cover;
+}
+
+.uraImg :hover {
+  background-image: url("images/uranus.png");
+  background-size: cover;
+}
+
+.nepImg :hover {
+  background-image: url("images/neptune.png");
+  background-size: cover;
 }
 
 .planet-link-circle a:active,
