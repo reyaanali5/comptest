@@ -41,9 +41,6 @@ function Mercury() {
           </div>
         )}
       </div>
-      <footer>
-        <div className="footer-content">The Universe Copright - 2023  </div>
-      </footer>
     </div>
   );
 }

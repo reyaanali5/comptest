@@ -125,6 +125,11 @@ footer {
   padding-bottom: 2%;
 }
 
+.copyright {
+  float: right;
+  padding-right: 2%;
+}
+
 /* Reset list styles for the navigation */
 nav ul {
   list-style-type: none;

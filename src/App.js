@@ -66,8 +66,6 @@ function App() {
           </nav>
         </header>
 
-
-
         <Routes>
           <Route path="/" element={<JWTImage />} />
           <Route path="/Mercury" element={<Mercury />} />
@@ -79,6 +77,9 @@ function App() {
           <Route path="/Uranus" element={<Uranus />} />
           <Route path="/Neptune" element={<Neptune />} />
         </Routes>
+        <footer>
+          <div className="footer-content">The Universe <div className='copyright'>2023 </div> </div>
+        </footer>
       </div>
     </Router>
   );
