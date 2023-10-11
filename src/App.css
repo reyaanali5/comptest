@@ -17,9 +17,13 @@
 }
 
 .apodImg {
-  height: 30%;
-  width: 70%;
+  height: auto;
+  width: 30%;
+  margin: 40px;
+  margin-left: 15%;
+  float: left;
 }
+
 .planet-heading {
   font-family: "Orbitron", sans-serif;
   color: aliceblue;
@@ -111,7 +115,7 @@ h2 {
 }
 
 .satImg :hover {
-  background-image: url("images/saturn.png");
+  background-image: url("images/saturnNav.png");
   background-size: cover;
   font-weight: bold;
   text-shadow: -2px 0 #6a186a, 0 2px #6a186a, 2px 0 #6a186a, 0 -2px #6a186a;
@@ -140,6 +144,7 @@ footer {
   padding-top: 2%;
   background-image: url(images/wallpaperflare.com_wallpaper.jpg);
   padding-bottom: 2%;
+  clear: both;
 }
 
 .copyright {
@@ -162,9 +167,8 @@ color: #f0f0f0;
 }
 
 .explanation {
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 5%;
+
+  padding: 5%;
 }
 
 @media screen and (max-width: 500px) {
