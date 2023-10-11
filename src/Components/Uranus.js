@@ -31,12 +31,17 @@ function Saturn() {
       <div className="planet-info">
         {planetData && (
           <div className="planet-container">
+            <div className="planet-description">
+  <p>
+    Uranus is a gas giant with a distinct blue-green color and rotates on its side.
+  </p>
+</div>
             <img src={uranusImage} alt="Uranus" className="planet-image" />
             <div className="planet-text">
-              <p>Mass: {planetData.mass} Jupiters</p>
-              <p>Radius: {planetData.radius} Jupiters</p>
-              <p>Orbital Period: {planetData.period} Earth days</p>
-              <p>Temperature: {planetData.temperature} Kelvin</p>
+            <p> <strong>Mass:</strong>  {planetData.mass} Jupiters</p>
+              <p> <strong>Radius:</strong> {planetData.radius} Jupiters</p>
+              <p><strong>Orbital Period: </strong>{planetData.period} Earth days</p>
+              <p><strong>Temperature: </strong> {planetData.temperature} Kelvin</p>
             </div>
           </div>
         )}

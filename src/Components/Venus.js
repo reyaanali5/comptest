@@ -32,12 +32,21 @@ function Venus() {
       <div className="planet-info">
         {planetData && (
           <div className="planet-container">
+
+<div className="planet-description">
+  <p>
+    Venus is often called Earth's "sister planet" due to its similar size and is known for its thick, toxic atmosphere.
+  </p>
+</div>
+
             <img src={venusImage} alt="Venus" className="planet-image" />
+            
+            
             <div className="planet-text">
-              <p>Mass: {planetData.mass} Jupiters</p>
-              <p>Radius: {planetData.radius} Jupiters</p>
-              <p>Orbital Period: {planetData.period} Earth days</p>
-              <p>Temperature: {planetData.temperature} Kelvin</p>
+            <p> <strong>Mass:</strong>  {planetData.mass} Jupiters</p>
+              <p> <strong>Radius:</strong> {planetData.radius} Jupiters</p>
+              <p><strong>Orbital Period: </strong>{planetData.period} Earth days</p>
+              <p><strong>Temperature: </strong> {planetData.temperature} Kelvin</p>
             </div>
           </div>
         )}

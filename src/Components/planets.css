@@ -41,8 +41,12 @@ body {
   }
   
   .planet-text {
-    flex: 1; 
     max-width: 400px;
+    max-width: 30%;
   }
   
-
+.planet-description{
+  flex: 1; 
+  max-width: 30%;
+  margin-left: 30px;
+}

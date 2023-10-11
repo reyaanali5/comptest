@@ -34,12 +34,19 @@ function Earth() {
       <div className="planet-info">
         {planetData && (
           <div className="planet-container">
+
+<div className="planet-description">
+              <p>
+                Earth is the third planet from the Sun and the only astronomical object known to harbor life.
+              </p>
+            </div>
+            
             <img src={earthImage} alt="Earth" className="planet-image" />
             <div className="planet-text">
-              <p>Mass: {planetData.mass} Jupiters</p>
-              <p>Radius: {planetData.radius} Jupiters</p>
-              <p>Orbital Period: {planetData.period} Earth days</p>
-              <p>Temperature: {planetData.temperature} Kelvin</p>
+              <p> <strong>Mass:</strong>  {planetData.mass} Jupiters</p>
+              <p> <strong>Radius:</strong> {planetData.radius} Jupiters</p>
+              <p><strong>Orbital Period: </strong>{planetData.period} Earth days</p>
+              <p><strong>Temperature: </strong> {planetData.temperature} Kelvin</p>
             </div>
           </div>
         )}

@@ -31,12 +31,17 @@ function Neptune() {
       <div className="planet-info">
         {planetData && (
           <div className="planet-container">
+            <div className="planet-description">
+  <p>
+    Neptune is the eighth planet and one of the gas giants, known for its deep blue color and strong winds.
+  </p>
+</div>
             <img src={neptuneImage} alt="Neptune" className="planet-image" />
             <div className="planet-text">
-              <p>Mass: {planetData.mass} Jupiters</p>
-              <p>Radius: {planetData.radius} Jupiters</p>
-              <p>Orbital Period: {planetData.period} Earth days</p>
-              <p>Temperature: {planetData.temperature} Kelvin</p>
+            <p> <strong>Mass:</strong>  {planetData.mass} Jupiters</p>
+              <p> <strong>Radius:</strong> {planetData.radius} Jupiters</p>
+              <p><strong>Orbital Period: </strong>{planetData.period} Earth days</p>
+              <p><strong>Temperature: </strong> {planetData.temperature} Kelvin</p>
             </div>
           </div>
         )}
