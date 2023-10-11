@@ -43,10 +43,10 @@ function Earth() {
 
             <img src={earthImage} alt="Earth" className="planet-image" />
             <div className="planet-text">
-              <p> <strong>Mass:</strong>  {planetData.mass} Jupiters</p>
-              <p> <strong>Radius:</strong> {planetData.radius} Jupiters</p>
-              <p><strong>Orbital Period: </strong>{planetData.period} Earth days</p>
-              <p><strong>Temperature: </strong> {planetData.temperature} Kelvin</p>
+              <p> <strong>MASS:</strong>  {planetData.mass} Jupiters</p>
+              <p> <strong>RADUIS:</strong> {planetData.radius} Jupiters</p>
+              <p><strong>ORBITAL PERIOD: </strong>{planetData.period} Earth days</p>
+              <p><strong>TEMPERATURE: </strong> {planetData.temperature} Kelvin</p>
             </div>
           </div>
         )}
