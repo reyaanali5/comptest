@@ -32,13 +32,13 @@ function Saturn() {
         {planetData && (
           <div className="planet-container">
             <div className="planet-description">
-  <p>
-    Saturn is famous for its stunning ring system, composed of countless icy particles and rock.
-  </p>
-</div>
+              <p>
+                Saturn is famous for its stunning ring system, composed of countless icy particles and rock.
+              </p>
+            </div>
             <img src={saturnImage} alt="Saturn" className="planet-image" />
             <div className="planet-text">
-            <p> <strong>Mass:</strong>  {planetData.mass} Jupiters</p>
+              <p> <strong>Mass:</strong>  {planetData.mass} Jupiters</p>
               <p> <strong>Radius:</strong> {planetData.radius} Jupiters</p>
               <p><strong>Orbital Period: </strong>{planetData.period} Earth days</p>
               <p><strong>Temperature: </strong> {planetData.temperature} Kelvin</p>

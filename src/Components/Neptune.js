@@ -32,13 +32,13 @@ function Neptune() {
         {planetData && (
           <div className="planet-container">
             <div className="planet-description">
-  <p>
-    Neptune is the eighth planet and one of the gas giants, known for its deep blue color and strong winds.
-  </p>
-</div>
+              <p>
+                Neptune is the eighth planet and one of the gas giants, known for its deep blue color and strong winds.
+              </p>
+            </div>
             <img src={neptuneImage} alt="Neptune" className="planet-image" />
             <div className="planet-text">
-            <p> <strong>Mass:</strong>  {planetData.mass} Jupiters</p>
+              <p> <strong>Mass:</strong>  {planetData.mass} Jupiters</p>
               <p> <strong>Radius:</strong> {planetData.radius} Jupiters</p>
               <p><strong>Orbital Period: </strong>{planetData.period} Earth days</p>
               <p><strong>Temperature: </strong> {planetData.temperature} Kelvin</p>

@@ -5,48 +5,51 @@
 
 
 body {
-  background-color: #000; 
+  background-color: #000;
   font-family: 'IBM Plex Mono', monospace;
-  color: #fff; 
+  color: #fff;
 }
 
 .planet-heading {
   font-size: 36px;
   font-weight: bold;
-  color: #f0f0f0; 
-  text-shadow: 2px 2px 4px #000; 
+  color: #f0f0f0;
+  text-shadow: 2px 2px 4px #000;
 }
 
 .planet-info {
-  font-size: 25px; 
+  font-size: 25px;
   text-align: left;
   margin-top: 10px;
   padding: 10px;
-  background-color: rgba(33, 38, 48, 0.8); 
-  border-radius: 10px; 
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Outer glow effect */
-  color: #f0f0f0; 
+  background-image: url("../images/spiral.jpg");
+  background-size: 100% 100%;;
+  /* background-color: rgba(33, 38, 48, 0.8); */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  /* Outer glow effect */
+  color: #f0f0f0;
 }
 
-/* Add this to your CSS */
 .planet-container {
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-  }
-  
-  .planet-image {
-    max-width: 500px; 
-    margin : 50px;
-  }
-  
-  .planet-text {
-    max-width: 400px;
-    max-width: 30%;
-  }
-  
-.planet-description{
-  flex: 1; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.planet-image {
+  max-width: 500px;
+  margin: 50px;
+
+}
+
+.planet-text {
+  max-width: 400px;
+  max-width: 30%;
+}
+
+.planet-description {
+  flex: 1;
   max-width: 30%;
   margin-left: 30px;
 }

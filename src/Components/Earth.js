@@ -35,12 +35,12 @@ function Earth() {
         {planetData && (
           <div className="planet-container">
 
-<div className="planet-description">
+            <div className="planet-description">
               <p>
                 Earth is the third planet from the Sun and the only astronomical object known to harbor life.
               </p>
             </div>
-            
+
             <img src={earthImage} alt="Earth" className="planet-image" />
             <div className="planet-text">
               <p> <strong>Mass:</strong>  {planetData.mass} Jupiters</p>

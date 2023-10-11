@@ -32,15 +32,15 @@ function Mercury() {
         {planetData && (
           <div className="planet-container">
 
-      <div className="planet-description">
-         <p>
-            Mercury is the closest planet to the Sun and has extreme temperature variations between day and night.
-        </p>
-      </div>
+            <div className="planet-description">
+              <p>
+                Mercury is the closest planet to the Sun and has extreme temperature variations between day and night.
+              </p>
+            </div>
 
             <img src={mercuryImage} alt="Mercury" className="planet-image" />
             <div className="planet-text">
-            <p> <strong>Mass:</strong>  {planetData.mass} Jupiters</p>
+              <p> <strong>Mass:</strong>  {planetData.mass} Jupiters</p>
               <p> <strong>Radius:</strong> {planetData.radius} Jupiters</p>
               <p><strong>Orbital Period: </strong>{planetData.period} Earth days</p>
               <p><strong>Temperature: </strong> {planetData.temperature} Kelvin</p>

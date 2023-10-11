@@ -32,12 +32,12 @@ function Jupiter() {
         {planetData && (
           <div className="planet-container">
             <div className="planet-description">
-  <p>
-    Jupiter is the largest planet in our solar system, known for its massive size and the Great Red Spot.
-  </p> </div>
+              <p>
+                Jupiter is the largest planet in our solar system, known for its massive size and the Great Red Spot.
+              </p> </div>
             <img src={jupiterImage} alt="Jupiter" className="planet-image" />
             <div className="planet-text">
-            <p> <strong>Mass:</strong>  {planetData.mass} Jupiters</p>
+              <p> <strong>Mass:</strong>  {planetData.mass} Jupiters</p>
               <p> <strong>Radius:</strong> {planetData.radius} Jupiters</p>
               <p><strong>Orbital Period: </strong>{planetData.period} Earth days</p>
               <p><strong>Temperature: </strong> {planetData.temperature} Kelvin</p>
