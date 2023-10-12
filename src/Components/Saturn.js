@@ -10,18 +10,28 @@ function Saturn() {
 
     const apiUrl = 'https://api.api-ninjas.com/v1/planets?name=Saturn';
 
-    axios.get(apiUrl, {
+    axios
+    .get(apiUrl, {
       headers: {
         'X-Api-Key': apiKey,
       },
     })
-      .then((response) => {
-        setPlanetData(response.data[0]);
-      })
-      .catch((error) => {
-        console.error('API Error:', error);
-      });
-  }, []);
+
+    .then((response) => {
+      setPlanetData(response.data[0]);
+      // Trigger the scroll to the bottom after a short delay to ensure the DOM is updated.
+      
+      setTimeout(() => {
+        window.scrollTo({
+          top: document.documentElement.scrollHeight,
+          behavior: 'smooth',
+        });
+      }, );
+    })
+    .catch((error) => {
+      console.error('API Error:', error);
+    });
+}, []);
 
   return (
     <div>
