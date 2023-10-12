@@ -57,44 +57,52 @@ function App() {
                     <nav>
                         <div className="nav-circle">
                             <div className="planet-link-circle">
-                                <div className='merImg'>
-                                    <Link to="/Mercury"><div className="planet-link-circle">Mercury</div></Link>
-                                </div>
+                                <Link to="/Mercury">
+                                    <div class="merImg"></div>
+                                    <div class="text-container">Mercury</div>
+                                </Link>
                             </div>
                             <div className="planet-link-circle">
-                                <div className='venImg'>
-                                    <Link to="/Venus"><div className="planet-link-circle">Venus</div></Link>
-                                </div>
+                                <Link to="/Venus">
+                                    <div class="venImg"></div>
+                                    <div class="text-container">Venus</div>
+                                </Link>
                             </div>
                             <div className="planet-link-circle">
-                                <div className='earImg'>
-                                    <Link to="/Earth"><div className="planet-link-circle">Earth</div></Link>
-                                </div>
+                                <Link to="/Earth">
+                                    <div class="earImg"></div>
+                                    <div class="text-container">Earth</div>
+                                </Link>
                             </div>
                             <div className="planet-link-circle">
-                                <div className='marImg'>
-                                    <Link to="/Mars"><div className="planet-link-circle">Mars</div></Link>
-                                </div>
+                                <Link to="/Mars">
+                                    <div class="marImg"></div>
+                                    <div class="text-container">Mars</div>
+                                </Link>
                             </div>
                             <div className="planet-link-circle">
-                                <div className='jupImg'>
-                                    <Link to="/Jupiter"><div className="planet-link-circle">Jupiter</div></Link>
-                                </div>
+                                <Link to="/Jupiter">
+                                    <div class="jupImg"></div>
+                                    <div class="text-container">Jupiter</div>
+                                </Link>
                             </div>
                             <div className="planet-link-circle">
-                                <div className='satImg'>
-                                    <Link to="/Saturn"><div className="planet-link-circle">Saturn</div></Link>
-                                </div>
+                                <Link to="/Saturn">
+                                    <div class="satImg"></div>
+                                    <div class="text-container">Saturn</div>
+                                </Link>
                             </div>
                             <div className="planet-link-circle">
-                                <div className='uraImg'>
-                                    <Link to="/Uranus"><div className="planet-link-circle">Uranus</div></Link>
-                                </div>
+                                <Link to="/Uranus">
+                                    <div class="uraImg"></div>
+                                    <div class="text-container">Uranus</div>
+                                </Link>
                             </div>
                             <div className="planet-link-circle">
-                                <div className='nepImg'>
-                                    <Link to="/Neptune"><div className="planet-link-circle">Neptune</div></Link>
-                                </div>
+                                <Link to="/Neptune">
+                                    <div class="nepImg"></div>
+                                    <div class="text-container">Neptune</div>
+                                </Link>
                             </div>
                         </div>
                     </nav>

@@ -66,7 +66,6 @@ h2 {
   justify-content: center;
   margin: 10px;
   transition: width 1s, height 1s, background-color 1s, transform 1s;
-  transform: rotate(0deg);
 }
 
 .planet-link-circle a {
@@ -74,65 +73,113 @@ h2 {
   color: aliceblue;
   text-shadow: 3px 3px 2px #6a186a;
   text-decoration: none;
+  position: relative;
 }
 
-.merImg :hover {
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-weight: bold;
+  text-shadow: -3px 0 #6a186a, 0 3px #6a186a, 3px 0 #6a186a, 0 -3px #6a186a;
+}
+
+.merImg {
   background-image: url("images/mercury.png");
   background-size: cover;
-  color: #000;
-  font-weight: bold;
-  text-shadow: -1px 0 #6a186a, 0 1px #6a186a, 1px 0 #6a186a, 0 -1px #6a186a;
+  width: 120px;
+  height: 120px;
+  transition: transform 3s;
 }
 
-.venImg :hover {
+.merImg:hover {
+  transform: rotate(360deg);
+}
+
+.venImg {
   background-image: url("images/venus.png");
   background-size: cover;
-  color: #000;
-  font-weight: bold;
-  text-shadow: -1px 0 #6a186a, 0 1px #6a186a, 1px 0 #6a186a, 0 -1px #6a186a;
+  width: 120px;
+  height: 120px;
+  transition: transform 3s;
 }
 
-.earImg :hover {
+.venImg:hover {
+  transform: rotate(360deg);
+}
+
+.earImg {
   background-image: url("images/earth.png");
   background-size: cover;
-  font-weight: bold;
-  text-shadow: -2px 0 #6a186a, 0 2px #6a186a, 2px 0 #6a186a, 0 -2px #6a186a;
+  width: 120px;
+  height: 120px;
+  transition: transform 3s;
 }
 
-.marImg :hover {
+.earImg:hover {
+  transform: rotate(360deg);
+}
+
+.marImg {
   background-image: url("images/mars.png");
   background-size: cover;
-  font-weight: bold;
-  text-shadow: -2px 0 #6a186a, 0 2px #6a186a, 2px 0 #6a186a, 0 -2px #6a186a;
+  width: 120px;
+  height: 120px;
+  transition: transform 3s;
 }
 
-.jupImg :hover {
+.marImg:hover {
+  transform: rotate(360deg);
+}
+
+.jupImg {
   background-image: url("images/jupiter.png");
   background-size: cover;
-  color: #000;
-  font-weight: bold;
-  text-shadow: -1px 0 #6a186a, 0 1px #6a186a, 1px 0 #6a186a, 0 -1px #6a186a;
+  width: 120px;
+  height: 120px;
+  transition: transform 3s;
 }
 
-.satImg :hover {
+.jupImg:hover {
+  transform: rotate(360deg);
+}
+
+.satImg {
   background-image: url("images/saturnNav.png");
   background-size: cover;
-  font-weight: bold;
-  text-shadow: -2px 0 #6a186a, 0 2px #6a186a, 2px 0 #6a186a, 0 -2px #6a186a;
+  width: 120px;
+  height: 120px;
+  transition: transform 3s;
 }
 
-.uraImg :hover {
+.satImg:hover {
+  transform: rotate(360deg);
+}
+
+.uraImg {
   background-image: url("images/uranus.png");
   background-size: cover;
-  font-weight: bold;
-  text-shadow: -2px 0 #6a186a, 0 2px #6a186a, 2px 0 #6a186a, 0 -2px #6a186a;
+  width: 120px;
+  height: 120px;
+  transition: transform 3s;
 }
 
-.nepImg :hover {
+.uraImg:hover {
+  transform: rotate(360deg);
+}
+
+.nepImg {
   background-image: url("images/neptune.png");
   background-size: cover;
-  font-weight: bold;
-  text-shadow: -2px 0 #6a186a, 0 2px #6a186a, 2px 0 #6a186a, 0 -2px #6a186a;
+  width: 120px;
+  height: 120px;
+  transition: transform 3s;
+}
+
+.nepImg:hover {
+  transform: rotate(360deg);
 }
 
 .planet-link-circle a:active,
@@ -190,6 +237,18 @@ nav ul {
   p {
     font-size: 12px;
   }
+
+  .merImg,
+  .venImg,
+  .earImg,
+  .marImg,
+  .jupImg,
+  .satImg,
+  .uraImg,
+  .nepImg {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -212,6 +271,18 @@ nav ul {
 
   p {
     font-size: 15px;
+  }
+
+  .merImg,
+  .venImg,
+  .earImg,
+  .marImg,
+  .jupImg,
+  .satImg,
+  .uraImg,
+  .nepImg {
+    width: 110px;
+    height: 110px;
   }
 }
 
