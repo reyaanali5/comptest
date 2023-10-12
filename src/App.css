@@ -285,6 +285,12 @@ nav ul {
     height: 110px;
   }
 }
+@media screen and (max-width: 900px) {
+  .planet-image {
+    width: 40%;
+    height: 40%;
+  }
+}
 
 /* Close button */
 
