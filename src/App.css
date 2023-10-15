@@ -287,10 +287,11 @@ nav ul {
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   font-size: 20px;
+  margin: 5%;
 }
 
 .welcome {
-  display: block;
+  text-shadow: -3px 0 #6a186a, 0 3px #6a186a, 3px 0 #6a186a, 0 -3px #6a186a;
 }
 
 /* .favourites {
@@ -499,10 +500,5 @@ nav ul {
   }
   p {
     font-size: 20px;
-  }
-
-  .welcome {
-    font-size: 20px;
-    display: block;
   }
 }
