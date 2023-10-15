@@ -42,7 +42,7 @@ const SignUp = () => {
 
     return (
         <div>
-            <h2>SignUp</h2>
+            <h2>Sign Up</h2>
             <Formik initialValues={{ name: '', email: '', password: '', }} onSubmit={handleSubmit} validationSchema={schema}>
                 <Form className="signUp-form">
                     <div className="form-items">
@@ -63,7 +63,7 @@ const SignUp = () => {
                         </div>
                     </div>
                     <div>
-                        <button type="submit">SignUp</button>
+                        <button type="submit">Sign Up</button>
                     </div>
                 </Form>
             </Formik>

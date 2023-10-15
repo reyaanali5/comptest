@@ -16,6 +16,7 @@ import Neptune from './Components/Neptune';
 import APODImage from './Components/APODImage';
 import Login from './Components/Auth/Login';
 import SignUp from './Components/Auth/Signup';
+import Favourites from './Components/Favourites';
 
 import { signOut } from 'firebase/auth';
 import { auth } from './firebase';
@@ -45,6 +46,7 @@ function MainContent() {
                     <Route path="/" element={<APODImage />} />
                     <Route path="/Login" element={<Login />} />
                     <Route path="/SignUp" element={<SignUp />} />
+                    <Route path="/Favourites" element={<Favourites />} />
                     <Route path="/Mercury" element={<Mercury />} />
                     <Route path="/Venus" element={<Venus />} />
                     <Route path="/Earth" element={<Earth />} />
@@ -75,13 +77,13 @@ function App() {
         <Router>
             <div className="App">
                 <header className="App-header">
+                    <div className="pageHeading"><Link to="/"> <h1>The Universe</h1></Link></div>
                     <div className="Auth">
-
                         {user ? (
-                            <p>
+                            <div className="welcome">
                                 Welcome {auth.currentUser?.displayName} !
                                 <button className="signOutButton" onClick={handleSignOut}>Sign Out</button>
-                            </p>
+                            </div>
                         ) : (
                             <div>
                                 <Link to="/Login"> <button className="loginButton">Login</button></Link>
@@ -89,7 +91,6 @@ function App() {
                             </div>
                         )}
                     </div>
-                    <div className="pageHeading"><Link to="/"> <h1>The Universe</h1></Link></div>
 
                     <nav>
                         <div className="nav-circle">
@@ -142,6 +143,13 @@ function App() {
                                 </Link>
                             </div>
                         </div>
+                        <div className="fav">
+                            {user ? (
+                                <Link to="/Favourites"><div className="favourites">Favourites</div></Link>
+                            ) : (
+                                null
+                            )}
+                        </div>
                     </nav>
                 </header>
 
@@ -151,7 +159,7 @@ function App() {
                     <div className="footer-content">The Universe <div className='copyright'>2023 </div> </div>
                 </footer>
             </div>
-        </Router>
+        </Router >
     );
 }
 

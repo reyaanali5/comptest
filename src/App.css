@@ -244,7 +244,7 @@ nav ul {
   background-color: #eae8fc;
   color: #6a186a;
   padding: 10px 30px;
-  border: none;
+  border: #6a186a;
   border-radius: 5px;
   cursor: pointer;
   font-family: "IBM Plex Mono", monospace;
@@ -256,7 +256,7 @@ nav ul {
   background-color: #eae8fc;
   color: #6a186a;
   padding: 10px 20px;
-  border: none;
+  border: #6a186a;
   border-radius: 5px;
   cursor: pointer;
   font-family: "IBM Plex Mono", monospace;
@@ -269,13 +269,30 @@ nav ul {
   background-color: #eae8fc;
   color: #6a186a;
   padding: 10px 20px;
-  border: none;
+  border: #6a186a;
   border-radius: 5px;
   cursor: pointer;
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   font-size: 20px;
-  margin: 2%;
+}
+
+.welcome {
+  display: block;
+}
+
+.favourites {
+  background-color: #eae8fc;
+  color: #6a186a;
+  padding: 10px 20px;
+  border: #6a186a;
+  width: 120px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .loginButton a,
@@ -432,6 +449,10 @@ nav ul {
     align-self: last baseline;
     right: 70%;
   }
+  .welcome {
+    font-size: 30px;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 380px) {
@@ -464,6 +485,11 @@ nav ul {
     right: 85%;
   }
   p {
-    font-size: 15px;
+    font-size: 20px;
+  }
+
+  .welcome {
+    font-size: 20px;
+    display: block;
   }
 }
