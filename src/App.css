@@ -237,6 +237,52 @@ nav ul {
   position: relative;
 }
 
+/* Buttons for Authentication */
+.Auth {
+}
+.loginButton {
+  background-color: #eae8fc;
+  color: #6a186a;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 2%;
+}
+.signUpButton {
+  background-color: #eae8fc;
+  color: #6a186a;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 2%;
+}
+
+.signOutButton {
+  background-color: #eae8fc;
+  color: #6a186a;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 2%;
+}
+
+.loginButton a,
+.signUpButton a,
+.signOutButton a {
+  text-decoration: none;
+}
 /* Screen sizes should be at the bottom */
 /* Screen sizes adjustment */
 

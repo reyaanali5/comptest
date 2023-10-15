@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes, useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import logo from './logo.svg';
@@ -13,6 +14,12 @@ import Saturn from './Components/Saturn';
 import Uranus from './Components/Uranus';
 import Neptune from './Components/Neptune';
 import APODImage from './Components/APODImage';
+import Login from './Components/Auth/Login';
+import SignUp from './Components/Auth/Signup';
+
+import { signOut } from 'firebase/auth';
+import { auth } from './firebase';
+import useAuth from './hooks/useAuth';
 
 function MainContent() {
     const location = useLocation();
@@ -26,13 +33,18 @@ function MainContent() {
         navigate("/");
     };
 
+
+
     return (
+
         <div className="content-container">
             {isContentActive && <button onClick={handleCloseContent} className="close-button">✖</button>}
 
             <div className="content-wrapper">
                 <Routes>
                     <Route path="/" element={<APODImage />} />
+                    <Route path="/Login" element={<Login />} />
+                    <Route path="/SignUp" element={<SignUp />} />
                     <Route path="/Mercury" element={<Mercury />} />
                     <Route path="/Venus" element={<Venus />} />
                     <Route path="/Earth" element={<Earth />} />
@@ -48,10 +60,35 @@ function MainContent() {
 }
 
 function App() {
+
+    const { user } = useAuth();
+
+    const handleSignOut = async () => {
+        try {
+            await signOut(auth);
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
     return (
         <Router>
             <div className="App">
                 <header className="App-header">
+                    <div className="Auth">
+
+                        {user ? (
+                            <p>
+                                Welcome {auth.currentUser?.displayName} !
+                                <button className="signOutButton" onClick={handleSignOut}>Sign Out</button>
+                            </p>
+                        ) : (
+                            <div>
+                                <Link to="/Login"> <button className="loginButton">Login</button></Link>
+                                <Link to="/SignUp"><button className="signUpButton">Sign Up</button></Link>
+                            </div>
+                        )}
+                    </div>
                     <div className="pageHeading"><Link to="/"> <h1>The Universe</h1></Link></div>
 
                     <nav>
