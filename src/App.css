@@ -182,6 +182,18 @@ h2 {
   transform: rotate(360deg);
 }
 
+.favImg {
+  background-image: url("images/star.png");
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  transition: transform 3s;
+}
+
+.favImg:hover {
+  transform: rotate(360deg);
+}
+
 .planet-link-circle a:active,
 .planet-link-circle a:focus {
   color: #fffbd6; /* Change current pages colour */
@@ -281,7 +293,7 @@ nav ul {
   display: block;
 }
 
-.favourites {
+/* .favourites {
   background-color: #eae8fc;
   color: #6a186a;
   padding: 10px 20px;
@@ -293,7 +305,7 @@ nav ul {
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   font-size: 20px;
-}
+} */
 
 .loginButton a,
 .signUpButton a,
@@ -339,7 +351,8 @@ nav ul {
   .jupImg,
   .satImg,
   .uraImg,
-  .nepImg {
+  .nepImg,
+  .favImg {
     width: 110px;
     height: 110px;
   }

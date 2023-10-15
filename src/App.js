@@ -142,14 +142,18 @@ function App() {
                                     <div class="text-container">Neptune</div>
                                 </Link>
                             </div>
+                            <div className="fav">
+                                {user ? (
+                                    <div className="planet-link-circle"> <Link to="/Favourites">
+                                        <div class="favImg"></div>
+                                        <div class="text-container">Favourites</div>
+                                    </Link></div>
+                                ) : (
+                                    null
+                                )}
+                            </div>
                         </div>
-                        <div className="fav">
-                            {user ? (
-                                <Link to="/Favourites"><div className="favourites">Favourites</div></Link>
-                            ) : (
-                                null
-                            )}
-                        </div>
+
                     </nav>
                 </header>
 
