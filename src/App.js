@@ -67,7 +67,7 @@ function App() {
 
     const handleSignOut = async () => {
         try {
-            await signOut(auth);
+            await signOut(auth); //signout method from firebase and use the auth service
         } catch (error) {
             console.log(error);
         }
