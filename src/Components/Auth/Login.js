@@ -12,6 +12,7 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 
 const Login = () => {
+
     const navigate = useNavigate();
 
     const schema = Yup.object().shape({  //Define the schema
@@ -21,8 +22,7 @@ const Login = () => {
 
     const handleSubmit = async (values) => { //values is the variable
         try {
-            const auth = getAuth();
-            await signInWithEmailAndPassword(auth, values.email, values.password);// the values from register will login using the firebase method
+            await signInWithEmailAndPassword(getAuth(), values.email, values.password);// the values from register will login using the firebase method
             navigate("/");
 
         } catch (error) {

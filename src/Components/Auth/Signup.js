@@ -9,7 +9,6 @@ import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase
 
 const SignUp = () => {
 
-
     const schema = Yup.object().shape({
         name: Yup.string().required().min(3, 'Too short!').max(50, 'Too long!').label("Name"),
         email: Yup.string().email('Please enter a valid email address').required('Email is required').label('Email'),
@@ -29,9 +28,6 @@ const SignUp = () => {
             console.log('got error: ', error.message);
         }
     };
-
-
-
 
     setTimeout(() => {
         window.scrollTo({
