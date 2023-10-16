@@ -69,3 +69,19 @@ body {
   flex: 1;
   z-index: 1;
 }
+
+/* For the favourites page */
+.planetFav-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.planetFav-card {
+  width: 400px;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 2%;
+  background-color: #000;
+  margin-bottom: 50px;
+}

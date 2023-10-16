@@ -34,6 +34,7 @@ function MainContent() {
         navigate("/");
     };
 
+    const { user } = useAuth();
 
 
     return (
@@ -46,7 +47,11 @@ function MainContent() {
                     <Route path="/" element={<APODImage />} />
                     <Route path="/Login" element={<Login />} />
                     <Route path="/SignUp" element={<SignUp />} />
-                    <Route path="/Favourites" element={<Favourites />} />
+                    {user ? (
+                        <Route path="/Favourites" element={<Favourites />} />
+                    ) : (
+                        null
+                    )}
                     <Route path="/Mercury" element={<Mercury />} />
                     <Route path="/Venus" element={<Venus />} />
                     <Route path="/Earth" element={<Earth />} />
