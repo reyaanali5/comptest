@@ -80,23 +80,23 @@ function App() {
 
     return (
         <Router>
-            <div className="App">
-                <header className="App-header">
-                    <div className="pageHeading"><Link to="/"> <h1>The Universe</h1></Link></div>
-                    <div className="Auth">
-                        {user ? (
-                            <div className="welcome">
-                                Welcome {auth.currentUser?.displayName} !
-                                <button className="signOutButton" onClick={handleSignOut}>Sign Out</button>
-                            </div>
-                        ) : (
-                            <div>
-                                <Link to="/Login"> <button className="loginButton">Login</button></Link>
-                                <Link to="/SignUp"><button className="signUpButton">Sign Up</button></Link>
-                            </div>
-                        )}
-                    </div>
-
+        <div className="App">
+            <header className="App-header">
+          
+                <div className="Auth">
+                    {user ? (
+                        <div className="welcome">
+                            Welcome {auth.currentUser?.displayName} !
+                            <button className="signOutButton" onClick={handleSignOut}>Sign Out</button>
+                        </div>
+                    ) : (
+                        <div>
+                            <Link to="/Login"> <button className="loginButton">Login</button></Link>
+                            <Link to="/SignUp"><button className="signUpButton">Sign Up</button></Link>
+                        </div>
+                    )}
+                </div>
+      <div className="pageHeading"><Link to="/"> <h1>The Universe</h1></Link></div>
                     <nav>
                         <div className="nav-circle">
                             <div className="planet-link-circle">
@@ -160,6 +160,7 @@ function App() {
                         </div>
 
                     </nav>
+                {/* </div> */}
                 </header>
 
                 <MainContent />

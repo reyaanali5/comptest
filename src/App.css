@@ -8,12 +8,15 @@
 
 .pageHeading {
   text-decoration: none;
-  text-shadow: -3px 0 #6a186a, 0 3px #6a186a, 3px 0 #6a186a, 0 -3px #6a186a;
+  font-size: 50px;
+  /* text-shadow: -3px 0 #6a186a, 0 3px #6a186a, 3px 0 #6a186a, 0 -3px #6a186a; */
 }
 
 .pageHeading a {
   color: aliceblue;
+  letter-spacing: 3px;
   text-decoration: none;
+  justify-content: center;
 }
 
 .apodImg {
@@ -33,6 +36,11 @@ h2 {
   text-shadow: 5px 5px 8px #505b72;
 }
 
+.login-signup{
+ text-align: right;
+ padding-bottom: 15vh;
+}
+
 .App-header {
   background-image: url("./images/MilkyWay.png");
   font-family: "Orbitron", sans-serif;
@@ -41,10 +49,8 @@ h2 {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(30px);
-  color: #fff; /* White text color */
+  color: #fff; 
 }
 
 .nav-circle {
@@ -59,8 +65,6 @@ h2 {
   height: 120px;
   background-color: rgba(0, 0, 0, 1);
   border-radius: 50%;
-  border-left: 1px solid aliceblue;
-  border-top: 1px solid aliceblue;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,19 +75,20 @@ h2 {
 .planet-link-circle a {
   font-size: 20px;
   color: aliceblue;
-  text-shadow: 3px 3px 2px #6a186a;
+  /* text-shadow: 3px 3px 2px #6a186a; */
   text-decoration: none;
   position: relative;
 }
 
 .text-container {
+  letter-spacing: 2px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
   font-weight: bold;
-  text-shadow: -3px 0 #6a186a, 0 3px #6a186a, 3px 0 #6a186a, 0 -3px #6a186a;
+  text-shadow: -3px 0 #000000, 0 3px #000000, 3px 0 #000000, 0 -3px #000000;
 }
 
 .merImg {
@@ -226,6 +231,7 @@ nav ul {
 
 .explanation {
   padding: 5%;
+  font-size: 27px;
 }
 
 /* Close button */
@@ -251,10 +257,14 @@ nav ul {
 
 /* Buttons for Authentication */
 .Auth {
+  padding-bottom: 20vh;
 }
+
+
+
 .loginButton {
   background-color: #eae8fc;
-  color: #6a186a;
+  color: #323194;
   padding: 10px 30px;
   border: #6a186a;
   border-radius: 5px;
@@ -266,7 +276,7 @@ nav ul {
 }
 .signUpButton {
   background-color: #eae8fc;
-  color: #6a186a;
+  color: #323194;
   padding: 10px 20px;
   border: #6a186a;
   border-radius: 5px;
@@ -290,8 +300,19 @@ nav ul {
   margin: 5%;
 }
 
+.loginButton:hover {
+  background-color: #323194; 
+  color: #eae8fc; 
+}
+
+.signUpButton:hover {
+  background-color: #323194; 
+  color: #eae8fc; 
+}
+
+
 .welcome {
-  text-shadow: -3px 0 #6a186a, 0 3px #6a186a, 3px 0 #6a186a, 0 -3px #6a186a;
+  /* text-shadow: -3px 0 #6a186a, 0 3px #6a186a, 3px 0 #6a186a, 0 -3px #6a186a; */
 }
 
 /* .favourites {
