@@ -36,9 +36,9 @@ h2 {
   text-shadow: 5px 5px 8px #505b72;
 }
 
-.login-signup{
- text-align: right;
- padding-bottom: 15vh;
+.login-signup {
+  text-align: right;
+  padding-bottom: 15vh;
 }
 
 .App-header {
@@ -50,7 +50,7 @@ h2 {
   display: flex;
   flex-direction: column;
   font-size: calc(30px);
-  color: #fff; 
+  color: #fff;
 }
 
 .nav-circle {
@@ -260,8 +260,6 @@ nav ul {
   padding-bottom: 20vh;
 }
 
-
-
 .loginButton {
   background-color: #eae8fc;
   color: #323194;
@@ -273,6 +271,7 @@ nav ul {
   font-weight: bold;
   font-size: 20px;
   margin: 2%;
+  transition: width 1s, height 1s, background-color 1s, transform 1s;
 }
 .signUpButton {
   background-color: #eae8fc;
@@ -285,6 +284,7 @@ nav ul {
   font-weight: bold;
   font-size: 20px;
   margin: 2%;
+  transition: width 1s, height 1s, background-color 1s, transform 1s;
 }
 
 .signOutButton {
@@ -298,21 +298,26 @@ nav ul {
   font-weight: bold;
   font-size: 20px;
   margin: 5%;
+  transition: width 1s, height 1s, background-color 1s, transform 1s;
 }
 
 .loginButton:hover {
-  background-color: #323194; 
-  color: #eae8fc; 
+  background-color: #323194;
+  color: #eae8fc;
 }
 
 .signUpButton:hover {
-  background-color: #323194; 
-  color: #eae8fc; 
+  background-color: #323194;
+  color: #eae8fc;
 }
 
+.signOutButton:hover {
+  background-color: #323194;
+  color: #eae8fc;
+}
 
 .welcome {
-  /* text-shadow: -3px 0 #6a186a, 0 3px #6a186a, 3px 0 #6a186a, 0 -3px #6a186a; */
+  margin-bottom: -6%;
 }
 
 /* .favourites {
