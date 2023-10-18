@@ -1,0 +1,44 @@
+{
+    "planets": [
+    {
+        "id": 1,
+        "name": "Earth",
+        "description": "Earth is the third planet from the Sun and the only astronomical object known to harbor life."
+    },
+    {
+        "id": 2,
+        "name": "Mercury",
+        "description": "Mercury is the closest planet to the Sun and has extreme temperature variations between day and night."
+     },
+     {
+        "id": 3,
+        "name": "Venus",
+        "description": "Venus is often called Earth's 'sister planet' due to its similar size and is known for its thick, toxic atmosphere."
+    },
+    {
+        "id": 4,
+        "name": "Mars",
+        "description": "Mars is the fourth planet from the Sun and often called the 'Red Planet' due to its reddish appearance."
+     },
+    {
+        "id": 5,
+        "name": "Jupiter",
+        "description": "Jupiter is the largest planet in our solar system, known for its massive size and the Great Red Spot."
+     },
+     {
+        "id": 6,
+        "name": "Saturn",
+        "description": "Saturn is famous for its stunning ring system, composed of countless icy particles and rock."
+     },
+     {
+        "id": 7,
+        "name": "Uranus",
+        "description": "Uranus is a gas giant with a distinct blue-green color and rotates on its side."
+     },
+     {
+        "id": 8,
+        "name": "Neptune",
+        "description": "Neptune is the eighth planet and one of the gas giants, known for its deep blue color and strong winds."
+     }
+    ]
+    }

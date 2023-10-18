@@ -19,6 +19,14 @@ function Earth() {
     })
       .then((response) => {
         setPlanetData(response.data[0]);
+
+        setTimeout(() => {
+          window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth',
+          });
+        }, );
+
       })
       .catch((error) => {
 
@@ -41,7 +49,7 @@ function Earth() {
               </p>
             </div>
 
-            <img src={earthImage} alt="Earth" className="planet-image" />
+            <img src={earthImage} alt="Earth" className="planet-image planet-image-spin" />
             <div className="planet-text">
               <p> <strong>MASS:</strong>  {planetData.mass} Jupiters</p>
               <p> <strong>RADUIS:</strong> {planetData.radius} Jupiters</p>

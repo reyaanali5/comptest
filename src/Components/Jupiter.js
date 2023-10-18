@@ -17,6 +17,14 @@ function Jupiter() {
     })
       .then((response) => {
         setPlanetData(response.data[0]);
+
+        setTimeout(() => {
+          window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth',
+          });
+        }, );
+
       })
       .catch((error) => {
         console.error('API Error:', error);
@@ -35,7 +43,7 @@ function Jupiter() {
               <p>
                 Jupiter is the largest planet in our solar system, known for its massive size and the Great Red Spot.
               </p> </div>
-            <img src={jupiterImage} alt="Jupiter" className="planet-image" />
+            <img src={jupiterImage} alt="Jupiter" className="planet-image planet-image-spin"  />
             <div className="planet-text">
               <p> <strong>Mass:</strong>  {planetData.mass} Jupiters</p>
               <p> <strong>Radius:</strong> {planetData.radius} Jupiters</p>

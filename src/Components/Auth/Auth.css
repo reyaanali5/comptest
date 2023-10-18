@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=PT+Sans+Narrow&family=Raleway:wght@500&display=swap");
+
+/* Authentication for login, and signout pages */
+/* Login */
+.login-form {
+  max-width: 300px;
+  margin: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1.2%;
+  border: 1px solid #f6e1e6;
+  background-color: #000;
+  border-radius: 2%;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.login-form button {
+  background-color: #eae8fc;
+  color: #6a186a;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+}
+
+.login-form .form-items {
+  display: inline;
+  justify-content: space-between;
+}
+
+.login-form .form-items .field {
+  flex: 1;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* SignUp */
+
+.signUp-form {
+  max-width: 300px;
+  margin: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1.2%;
+  border: 1px solid #f6e1e6;
+  background-color: #000;
+  border-radius: 2%;
+}
+
+.signUp-form label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.signUp-form input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.signUp-form button {
+  background-color: #eae8fc;
+  color: #6a186a;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+}
+
+.signUp-form .form-items {
+  display: inline;
+  justify-content: space-between;
+}
+
+.signUp-form .form-items .field {
+  flex: 1;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Error Message */
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+  font-weight: bold;
+}

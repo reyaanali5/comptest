@@ -10,13 +10,23 @@ function Mars() {
 
     const apiUrl = 'https://api.api-ninjas.com/v1/planets?name=Mars';
 
-    axios.get(apiUrl, {
-      headers: {
-        'X-Api-Key': apiKey,
-      },
-    })
+    axios
+      .get(apiUrl, {
+        headers: {
+          'X-Api-Key': apiKey,
+        },
+      })
+
       .then((response) => {
         setPlanetData(response.data[0]);
+        // Trigger the scroll to the bottom after a short delay to ensure the DOM is updated.
+        
+        setTimeout(() => {
+          window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth',
+          });
+        }, );
       })
       .catch((error) => {
         console.error('API Error:', error);
@@ -36,7 +46,7 @@ function Mars() {
                 Mars is the fourth planet from the Sun and often called the "Red Planet" due to its reddish appearance.
               </p>
             </div>
-            <img src={marsImage} alt="Mars" className="planet-image" />
+            <img src={marsImage} alt="Mars" className="planet-image planet-image-spin" />
             <div className="planet-text">
               <p> <strong>Mass:</strong>  {planetData.mass} Jupiters</p>
               <p> <strong>Radius:</strong> {planetData.radius} Jupiters</p>
