@@ -82,8 +82,19 @@ function App() {
         <Router>
         <div className="App">
             <header className="App-header">
-          
                 <div className="Auth">
+
+                    <div className="fav">
+                                {user ? (
+                                    <div className="planet-link-circle"> <Link to="/Favourites">
+                                        <div class="favImg"></div>
+                                        <div class="text-container">Favourites</div>
+                                    </Link></div>
+                                ) : (
+                                    null
+                                )}
+                        </div>
+                        
                     {user ? (
                         <div className="welcome">
                             Welcome {auth.currentUser?.displayName} !
@@ -95,7 +106,11 @@ function App() {
                             <Link to="/SignUp"><button className="signUpButton">Sign Up</button></Link>
                         </div>
                     )}
-                </div>
+
+                 
+                </div>  
+                      
+
       <div className="pageHeading"><Link to="/"> <h1>The Universe</h1></Link></div>
                     <nav>
                         <div className="nav-circle">
@@ -147,16 +162,7 @@ function App() {
                                     <div class="text-container">Neptune</div>
                                 </Link>
                             </div>
-                            <div className="fav">
-                                {user ? (
-                                    <div className="planet-link-circle"> <Link to="/Favourites">
-                                        <div class="favImg"></div>
-                                        <div class="text-container">Favourites</div>
-                                    </Link></div>
-                                ) : (
-                                    null
-                                )}
-                            </div>
+                           
                         </div>
 
                     </nav>

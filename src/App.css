@@ -259,6 +259,10 @@ nav ul {
 .Auth {
   text-align: right;
   padding-bottom: 20vh;
+  text-align: right;
+  display: flex;
+  justify-content:right;
+
 }
 
 .loginButton {
@@ -298,7 +302,7 @@ nav ul {
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   font-size: 20px;
-  margin: 5%;
+  margin: 2vh;
   transition: width 1s, height 1s, background-color 1s, transform 1s;
 }
 
@@ -318,10 +322,15 @@ nav ul {
 }
 
 .welcome {
-  margin-bottom: -6%;
+  /* text-shadow: -3px 0 #6a186a, 0 3px #6a186a, 3px 0 #6a186a, 0 -3px #6a186a; */
 }
 
-/* .favourites {
+.fav{
+  max-width: 20vh;
+  
+}
+
+.favourites {
   background-color: #eae8fc;
   color: #6a186a;
   padding: 10px 20px;
@@ -333,7 +342,7 @@ nav ul {
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   font-size: 20px;
-} */
+}
 
 .loginButton a,
 .signUpButton a,
