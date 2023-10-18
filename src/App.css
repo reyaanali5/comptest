@@ -257,6 +257,7 @@ nav ul {
 
 /* Buttons for Authentication */
 .Auth {
+  text-align: right;
   padding-bottom: 20vh;
 }
 
