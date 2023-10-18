@@ -29,7 +29,7 @@ function APODImage() {
                     )}
                     <p className="explanation">{imageData.explanation}</p>
                 </>
-            ) : <p>Loading...</p>}
+            ) : <p>Loading</p>}
         </div>
 
     );

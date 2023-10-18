@@ -17,6 +17,7 @@ import APODImage from './Components/APODImage';
 import Login from './Components/Auth/Login';
 import SignUp from './Components/Auth/Signup';
 import Favourites from './Components/Favourites';
+import MarsWeather from './Components/MarsWeather';
 
 import { signOut } from 'firebase/auth';
 import { auth } from './firebase';
@@ -60,6 +61,7 @@ function MainContent() {
                     <Route path="/Saturn" element={<Saturn />} />
                     <Route path="/Uranus" element={<Uranus />} />
                     <Route path="/Neptune" element={<Neptune />} />
+                    <Route path="/MarsWeather" element={<MarsWeather />} />
                 </Routes>
             </div>
         </div>
