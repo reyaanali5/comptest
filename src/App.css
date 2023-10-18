@@ -473,6 +473,9 @@ nav ul {
     font-size: 35px;
     right: 5%;
   }
+  .pageHeading {
+    font-size: smaller;
+  }
 
   p {
     width: 300%;
