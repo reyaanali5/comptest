@@ -22,6 +22,7 @@ import MarsWeather from './Components/MarsWeather';
 import { signOut } from 'firebase/auth';
 import { auth } from './firebase';
 import useAuth from './hooks/useAuth';
+import ParentComponent from './Components/ParentComponent';
 
 function MainContent() {
     const location = useLocation();
@@ -45,7 +46,8 @@ function MainContent() {
 
             <div className="content-wrapper">
                 <Routes>
-                    <Route path="/" element={<APODImage />} />
+                    <Route path="/" element={<ParentComponent />} />
+                    {/* <Route path="/" element={<APODImage />} /> */}
                     {/* <Route path="/MarsWeather" element={<MarsWeather />} /> */}
                     <Route path="/Login" element={<Login />} />
                     <Route path="/SignUp" element={<SignUp />} />
