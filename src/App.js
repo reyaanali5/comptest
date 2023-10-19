@@ -46,6 +46,7 @@ function MainContent() {
             <div className="content-wrapper">
                 <Routes>
                     <Route path="/" element={<APODImage />} />
+                    <Route path="/" element={<MarsWeather />} />
                     <Route path="/Login" element={<Login />} />
                     <Route path="/SignUp" element={<SignUp />} />
                     {user ? (
@@ -82,38 +83,38 @@ function App() {
 
     return (
         <Router>
-        <div className="App">
-            <header className="App-header">
-                <div className="Auth">
+            <div className="App">
+                <header className="App-header">
+                    <div className="Auth">
 
-                    <div className="fav">
-                                {user ? (
-                                    <div className="planet-link-circle"> <Link to="/Favourites">
-                                        <div class="favImg"></div>
-                                        <div class="text-container">Favourites</div>
-                                    </Link></div>
-                                ) : (
-                                    null
-                                )}
+                        <div className="fav">
+                            {user ? (
+                                <div className="planet-link-circle"> <Link to="/Favourites">
+                                    <div class="favImg"></div>
+                                    <div class="text-container">Favourites</div>
+                                </Link></div>
+                            ) : (
+                                null
+                            )}
                         </div>
-                        
-                    {user ? (
-                        <div className="welcome">
-                            Welcome {auth.currentUser?.displayName} !
-                            <button className="signOutButton" onClick={handleSignOut}>Sign Out</button>
-                        </div>
-                    ) : (
-                        <div>
-                            <Link to="/Login"> <button className="loginButton">Login</button></Link>
-                            <Link to="/SignUp"><button className="signUpButton">Sign Up</button></Link>
-                        </div>
-                    )}
 
-                 
-                </div>  
-                      
+                        {user ? (
+                            <div className="welcome">
+                                Welcome {auth.currentUser?.displayName} !
+                                <button className="signOutButton" onClick={handleSignOut}>Sign Out</button>
+                            </div>
+                        ) : (
+                            <div>
+                                <Link to="/Login"> <button className="loginButton">Login</button></Link>
+                                <Link to="/SignUp"><button className="signUpButton">Sign Up</button></Link>
+                            </div>
+                        )}
 
-      <div className="pageHeading"><Link to="/"> <h1>The Universe</h1></Link></div>
+
+                    </div>
+
+
+                    <div className="pageHeading"><Link to="/"> <h1>The Universe</h1></Link></div>
                     <nav>
                         <div className="nav-circle">
                             <div className="planet-link-circle">
@@ -164,11 +165,11 @@ function App() {
                                     <div class="text-container">Neptune</div>
                                 </Link>
                             </div>
-                           
+
                         </div>
 
                     </nav>
-                {/* </div> */}
+                    {/* </div> */}
                 </header>
 
                 <MainContent />
