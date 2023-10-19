@@ -46,7 +46,7 @@ function MainContent() {
             <div className="content-wrapper">
                 <Routes>
                     <Route path="/" element={<APODImage />} />
-                    <Route path="/" element={<MarsWeather />} />
+                    {/* <Route path="/MarsWeather" element={<MarsWeather />} /> */}
                     <Route path="/Login" element={<Login />} />
                     <Route path="/SignUp" element={<SignUp />} />
                     {user ? (
