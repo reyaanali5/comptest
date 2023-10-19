@@ -261,8 +261,7 @@ nav ul {
   padding-bottom: 20vh;
   text-align: right;
   display: flex;
-  justify-content:right;
-
+  justify-content: right;
 }
 
 .loginButton {
@@ -325,9 +324,8 @@ nav ul {
   /* text-shadow: -3px 0 #6a186a, 0 3px #6a186a, 3px 0 #6a186a, 0 -3px #6a186a; */
 }
 
-.fav{
+.fav {
   max-width: 20vh;
-  
 }
 
 .favourites {
@@ -344,6 +342,9 @@ nav ul {
   font-size: 20px;
 }
 
+.weatherInfo {
+  width: 100%;
+}
 .loginButton a,
 .signUpButton a,
 .signOutButton a {
@@ -425,6 +426,14 @@ nav ul {
     width: 400%;
     font-size: 30px;
   }
+
+  .weatherInfo {
+    width: 25%;
+  }
+
+  .weatherHeading {
+    font-size: 60px;
+  }
 }
 @media screen and (max-width: 850px) {
   .planet-image {
@@ -505,6 +514,13 @@ nav ul {
   .welcome {
     font-size: 30px;
     display: block;
+  }
+  .weatherInfo {
+    width: 33%;
+  }
+
+  .weatherHeading {
+    font-size: 30px;
   }
 }
 

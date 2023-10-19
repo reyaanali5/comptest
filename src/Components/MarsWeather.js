@@ -18,10 +18,10 @@ function MarsWeather() {
 
   return (
     <div className="mars-weather">
-      <h2>Mars Weather</h2>
+      <h2 className="weatherHeading">Mars Weather</h2>
       {weatherData ? (
         weatherData.sol_keys.length > 0 ? (
-          <div>
+          <div className='weatherInfo'>
             <p>Sol: {weatherData.sol_keys[0]}</p>
             {weatherData[weatherData.sol_keys[0]].AT ? (
               <div>
