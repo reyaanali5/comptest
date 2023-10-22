@@ -1,68 +1,105 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/csshe2?family=Orbitron&display=swap");
+
+.APOD{
+  background-image:url(./images/bkgnd/bk.png) ;
+  min-height: 135vh;
+}
+
+.APOD h2{
+  padding-top: 45vh;
+}
 
 .App {
   margin: auto;
   text-align: center;
-  background-image: url(images/wallpaperflare.com_wallpaper.jpg);
+  /* background-image: url(./images/bkgnd/bk.png); */
+  background-color: #1c1935;
 }
 
 .pageHeading {
   text-decoration: none;
-  font-size: 50px;
-  /* text-shadow: -3px 0 #6a186a, 0 3px #6a186a, 3px 0 #6a186a, 0 -3px #6a186a; */
+  font-size: 23px;
+  padding-left: 5vh;
+  margin:0;
+  align-items: center; /* Vertically center items */
 }
 
 .pageHeading a {
-  color: aliceblue;
+  color:  #f4ffff;
   letter-spacing: 3px;
   text-decoration: none;
-  justify-content: center;
 }
 
-.apodImg {
-  height: auto;
-  width: 30%;
-  margin: 40px;
-  margin-left: 15%;
-  float: left;
+
+
+.login{
+  flex:1;
+  
 }
+
 
 .planet-heading {
   font-family: "Orbitron", sans-serif;
+  font-size: 30cm;
   color: aliceblue;
+ padding: 0;
+ margin: 0;
 }
 
 h2 {
   text-shadow: 5px 5px 8px #505b72;
 }
 
+
+
 .login-signup {
   text-align: right;
   padding-bottom: 15vh;
+  flex-direction: row;
 }
 
 .App-header {
-  background-image: url("./images/MilkyWay.png");
   font-family: "Orbitron", sans-serif;
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
+  height: 10vh;
   display: flex;
-  flex-direction: column;
+  text-align: right;
+  flex-direction: row;
+  justify-content: space-between;
   font-size: calc(30px);
   color: #fff;
+  align-items: center; 
 }
+
+h2.planet {
+  margin: 0;
+  font-size: 40px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.scroll{
+  min-height: 4vh;
+}
+
+.planet-text {
+  background-color: #e69668; 
+  padding: 20px;
+  border-radius: 50px;
+}
+
 
 .nav-circle {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 20px;
+  min-height: 40vh;
 }
 
 .planet-link-circle {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   background-color: rgba(0, 0, 0, 1);
   border-radius: 50%;
   display: flex;
@@ -75,7 +112,6 @@ h2 {
 .planet-link-circle a {
   font-size: 20px;
   color: aliceblue;
-  /* text-shadow: 3px 3px 2px #6a186a; */
   text-decoration: none;
   position: relative;
 }
@@ -94,8 +130,8 @@ h2 {
 .merImg {
   background-image: url("images/mercury.png");
   background-size: cover;
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   transition: transform 3s;
 }
 
@@ -106,8 +142,8 @@ h2 {
 .venImg {
   background-image: url("images/venus.png");
   background-size: cover;
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   transition: transform 3s;
 }
 
@@ -118,8 +154,8 @@ h2 {
 .earImg {
   background-image: url("images/earth.png");
   background-size: cover;
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   transition: transform 3s;
 }
 
@@ -130,8 +166,8 @@ h2 {
 .marImg {
   background-image: url("images/mars.png");
   background-size: cover;
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   transition: transform 3s;
 }
 
@@ -142,8 +178,8 @@ h2 {
 .jupImg {
   background-image: url("images/jupiter.png");
   background-size: cover;
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   transition: transform 3s;
 }
 
@@ -154,8 +190,8 @@ h2 {
 .satImg {
   background-image: url("images/saturnNav.png");
   background-size: cover;
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   transition: transform 3s;
 }
 
@@ -166,8 +202,8 @@ h2 {
 .uraImg {
   background-image: url("images/uranus.png");
   background-size: cover;
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   transition: transform 3s;
 }
 
@@ -178,8 +214,8 @@ h2 {
 .nepImg {
   background-image: url("images/neptune.png");
   background-size: cover;
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   transition: transform 3s;
 }
 
@@ -223,16 +259,40 @@ nav ul {
 }
 
 .apodImg {
+  height: auto;
+  width: 30%;
+  margin: 40px;
+  margin-left: 15%;
   border: #000;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  /* Outer glow effect */
   color: #f0f0f0;
+  width: 50vh;
 }
 
 .explanation {
   padding: 5%;
   font-size: 27px;
 }
+
+
+.image-explanation-container {
+  display: flex;
+  align-items: center; 
+}
+
+/* .image-container {
+  flex: 1; 
+  margin-right: 20px;
+} */
+
+.explanation-container {
+  flex: 2; 
+}
+
+
+
+
+
 
 /* Close button */
 
@@ -255,77 +315,73 @@ nav ul {
   position: relative;
 }
 
-/* Buttons for Authentication */
-.Auth {
-  text-align: right;
-  padding-bottom: 20vh;
-  text-align: right;
-  display: flex;
-  justify-content: right;
+/* backgroundf img */
+.bk-img {
+  min-height: 75vh;
+  background-image: url("./images/bkgnd/planets.png");
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .loginButton {
-  background-color: #eae8fc;
-  color: #323194;
+  background-color: #e69668;
+  color: #f0f0f0;
   padding: 10px 30px;
-  border: #6a186a;
-  border-radius: 5px;
+  border: #e69668;
+  border-radius: 25px;
   cursor: pointer;
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   font-size: 20px;
   margin: 2%;
-  transition: width 1s, height 1s, background-color 1s, transform 1s;
+  transition: 0.5s;
 }
+
 .signUpButton {
-  background-color: #eae8fc;
-  color: #323194;
+  background-color: #e69668;
+  color: #f0f0f0;
   padding: 10px 20px;
-  border: #6a186a;
-  border-radius: 5px;
+  border: #e69668;
+  border-radius: 25px;
   cursor: pointer;
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   font-size: 20px;
-  margin: 2%;
-  transition: width 1s, height 1s, background-color 1s, transform 1s;
+  margin:2%;
+  transition: 0.5s;
 }
 
 .signOutButton {
-  background-color: #eae8fc;
-  color: #6a186a;
+  background-color: #e69668;
+  color: #f0f0f0;
   padding: 10px 20px;
-  border: #6a186a;
-  border-radius: 5px;
+  border: #e69668;
+  border-radius: 25px;
   cursor: pointer;
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   font-size: 20px;
   margin: 2vh;
-  transition: width 1s, height 1s, background-color 1s, transform 1s;
+  transition: 0.5s;
 }
 
 .loginButton:hover {
-  background-color: #323194;
-  color: #eae8fc;
+  background-color: #4052bb;
 }
 
 .signUpButton:hover {
-  background-color: #323194;
-  color: #eae8fc;
+  background-color: #4052bb;
 }
 
 .signOutButton:hover {
-  background-color: #323194;
-  color: #eae8fc;
+  background-color: #4052bb;
 }
 
-.welcome {
-  /* text-shadow: -3px 0 #6a186a, 0 3px #6a186a, 3px 0 #6a186a, 0 -3px #6a186a; */
-}
 
-.fav {
+.fav{
   max-width: 20vh;
+  
 }
 
 .favourites {
@@ -333,7 +389,7 @@ nav ul {
   color: #6a186a;
   padding: 10px 20px;
   border: #6a186a;
-  width: 120px;
+  width: 140px;
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
@@ -342,9 +398,6 @@ nav ul {
   font-size: 20px;
 }
 
-.weatherInfo {
-  width: 100%;
-}
 .loginButton a,
 .signUpButton a,
 .signOutButton a {
@@ -426,14 +479,6 @@ nav ul {
     width: 400%;
     font-size: 30px;
   }
-
-  .weatherInfo {
-    width: 25%;
-  }
-
-  .weatherHeading {
-    font-size: 60px;
-  }
 }
 @media screen and (max-width: 850px) {
   .planet-image {
@@ -491,9 +536,6 @@ nav ul {
     font-size: 35px;
     right: 5%;
   }
-  .pageHeading {
-    font-size: smaller;
-  }
 
   p {
     width: 300%;
@@ -514,13 +556,6 @@ nav ul {
   .welcome {
     font-size: 30px;
     display: block;
-  }
-  .weatherInfo {
-    width: 33%;
-  }
-
-  .weatherHeading {
-    font-size: 30px;
   }
 }
 

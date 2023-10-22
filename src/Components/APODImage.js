@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import '../App.css';
 
 function APODImage() {
     const [imageData, setImageData] = useState(null);
@@ -18,20 +19,27 @@ function APODImage() {
     }, []);
 
     return (
-        <div className="APOD-Image">
+        <div className="APOD">
             <div className="planet-heading"><h2>NASA's Astronomy Picture of the Day</h2></div>
-            {imageData ? (
-                <>
-                    {imageData.media_type === "image" ? (
-                        <Link to={imageData.url} style={{ textDecoration: 'none', color: '#000' }}> <img className="apodImg" src={imageData.url} alt="APOD Image" /></Link>
-                    ) : (
-                        <iframe title="APOD Video" src={imageData.url}></iframe> // If a video is uploaded instead of an image
-                    )}
-                    <p className="explanation">{imageData.explanation}</p>
-                </>
-            ) : <p>Loading</p>}
+            <div className="image-explanation-container">
+                {imageData ? (
+                    <>
+                        <div className="image-container">
+                            {imageData.media_type === "image" ? (
+                                <Link to={imageData.url} style={{ textDecoration: 'none', color: '#000' }}>
+                                    <img className="apodImg" src={imageData.url} alt="APOD Image" />
+                                </Link>
+                            ) : (
+                                <iframe title="APOD Video" src={imageData.url}></iframe>
+                            )}
+                        </div>
+                        <div className="explanation-container">
+                            <p className="explanation">{imageData.explanation}</p>
+                        </div>
+                    </>
+                ) : <p>Loading</p>}
+            </div>
         </div>
-
     );
 }
 

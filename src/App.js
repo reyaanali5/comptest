@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes, useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import logo from './logo.svg';
 import './App.css';
+
+// import { animateScroll as scroll } from 'react-scroll';
+import { Link as ScrollLink, Element, scroller } from 'react-scroll';
+// NEW NEW NEW
 
 import Mercury from './Components/Mercury';
 import Venus from './Components/Venus';
@@ -25,6 +28,7 @@ import useAuth from './hooks/useAuth';
 import ParentComponent from './Components/ParentComponent';
 
 function MainContent() {
+    
     const location = useLocation();
     const navigate = useNavigate();
     const [showDefault, setShowDefault] = useState(true);
@@ -71,7 +75,17 @@ function MainContent() {
     );
 }
 
+
 function App() {
+
+    // const scrollToNavCircle = () => {
+    //     scroller.scrollTo("nav-circle", {
+    //         duration: 800,
+    //         delay: 0,
+    //         smooth: "easeInOutQuart", // You can adjust the smoothness and other options
+    //     });
+    // };
+    // new new new NEW NEW NEW NEW
 
     const { user } = useAuth();
 
@@ -87,8 +101,9 @@ function App() {
         <Router>
             <div className="App">
                 <header className="App-header">
-                    <div className="Auth">
 
+                    <div className="pageHeading"><Link to="/"> <h1>The Universe</h1></Link></div>
+                       
                         <div className="fav">
                             {user ? (
                                 <div className="planet-link-circle"> <Link to="/Favourites">
@@ -106,17 +121,30 @@ function App() {
                                 <button className="signOutButton" onClick={handleSignOut}>Sign Out</button>
                             </div>
                         ) : (
-                            <div>
+                            <div className="login">
                                 <Link to="/Login"> <button className="loginButton">Login</button></Link>
                                 <Link to="/SignUp"><button className="signUpButton">Sign Up</button></Link>
                             </div>
                         )}
+                    </header>
 
-
+                    <div className="bk-img">
                     </div>
 
+                    <div className= "scroll"></div>
 
-                    <div className="pageHeading"><Link to="/"> <h1>The Universe</h1></Link></div>
+                    <h2 className="planet">
+                        <ScrollLink
+                            to="scroll"
+                            spy={true}
+                            smooth={true}
+                            duration={1000}
+                        >
+                            <span class="planet-text">THE 8 PLANETS</span>
+                            
+                        </ScrollLink>
+                    </h2>
+                    
                     <nav>
                         <div className="nav-circle">
                             <div className="planet-link-circle">
@@ -172,7 +200,7 @@ function App() {
 
                     </nav>
                     {/* </div> */}
-                </header>
+                
 
                 <MainContent />
 
