@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/csshe2?family=Orbitron&display=swap");
 
-.APOD{
-  background-image:url(./images/bkgnd/bk.png) ;
+.APOD {
+  background-image: url(./images/bkgnd/bk.png);
   min-height: 135vh;
 }
 
-.APOD h2{
+.APOD h2 {
   padding-top: 45vh;
 }
 
@@ -20,37 +20,31 @@
   text-decoration: none;
   font-size: 23px;
   padding-left: 5vh;
-  margin:0;
+  margin: 0;
   align-items: center; /* Vertically center items */
 }
 
 .pageHeading a {
-  color:  #f4ffff;
+  color: #f4ffff;
   letter-spacing: 3px;
   text-decoration: none;
 }
 
-
-
-.login{
-  flex:1;
-  
+.login {
+  flex: 1;
 }
-
 
 .planet-heading {
   font-family: "Orbitron", sans-serif;
   font-size: 30cm;
   color: aliceblue;
- padding: 0;
- margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
   text-shadow: 5px 5px 8px #505b72;
 }
-
-
 
 .login-signup {
   text-align: right;
@@ -67,27 +61,26 @@ h2 {
   justify-content: space-between;
   font-size: calc(30px);
   color: #fff;
-  align-items: center; 
+  align-items: center;
 }
 
 h2.planet {
   margin: 0;
   font-size: 40px;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
-.scroll{
+.scroll {
   min-height: 4vh;
 }
 
 .planet-text {
-  background-color: #e69668; 
+  background-color: #e69668;
   padding: 20px;
   border-radius: 50px;
 }
-
 
 .nav-circle {
   display: flex;
@@ -109,6 +102,25 @@ h2.planet {
   transition: width 1s, height 1s, background-color 1s, transform 1s;
 }
 
+.planet-link-F {
+  width: 140px;
+  height: 140px;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  transition: width 1s, height 1s, background-color 1s, transform 1s;
+}
+
+.planet-link-F a {
+  font-size: 20px;
+  color: aliceblue;
+  text-decoration: none;
+  position: relative;
+}
+
 .planet-link-circle a {
   font-size: 20px;
   color: aliceblue;
@@ -117,6 +129,17 @@ h2.planet {
 }
 
 .text-container {
+  letter-spacing: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-weight: bold;
+  text-shadow: -3px 0 #000000, 0 3px #000000, 3px 0 #000000, 0 -3px #000000;
+}
+
+.text-containerF {
   letter-spacing: 2px;
   position: absolute;
   top: 50%;
@@ -274,10 +297,9 @@ nav ul {
   font-size: 27px;
 }
 
-
 .image-explanation-container {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 /* .image-container {
@@ -286,13 +308,8 @@ nav ul {
 } */
 
 .explanation-container {
-  flex: 2; 
+  flex: 2;
 }
-
-
-
-
-
 
 /* Close button */
 
@@ -319,7 +336,7 @@ nav ul {
 .bk-img {
   min-height: 75vh;
   background-image: url("./images/bkgnd/planets.png");
-  background-size:auto;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -348,7 +365,7 @@ nav ul {
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   font-size: 20px;
-  margin:2%;
+  margin: 2%;
   transition: 0.5s;
 }
 
@@ -378,10 +395,8 @@ nav ul {
   background-color: #4052bb;
 }
 
-
-.fav{
+.fav {
   max-width: 20vh;
-  
 }
 
 .favourites {
@@ -423,8 +438,8 @@ nav ul {
 
 @media screen and (max-width: 950px) {
   .planet-link-circle {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     font-size: 18px;
     margin: 12px;
     padding: 5px;
@@ -444,14 +459,10 @@ nav ul {
   .uraImg,
   .nepImg,
   .favImg {
-    width: 110px;
-    height: 110px;
+    width: 160px;
+    height: 160px;
   }
 
-  .planet-image {
-    width: 50%;
-    height: 50%;
-  }
   .planet-description {
     position: relative;
     align-self: first baseline;
@@ -462,6 +473,7 @@ nav ul {
     position: relative;
     align-self: last baseline;
     right: 50%;
+    background-color: rgba(255, 255, 255, 0);
   }
 
   .apodImg {
@@ -475,15 +487,60 @@ nav ul {
     width: fit-content;
   }
 
+  .image-explanation-container {
+    display: inline-block;
+  }
+
+  h2.planet {
+    font-size: 45px;
+    margin-left: 200px;
+    width: 900px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .favImg {
+    width: 200px;
+    height: 200px;
+  }
+  .planet-link-F {
+    margin-top: 700px;
+    margin-left: 0px;
+    width: 200px;
+    height: 200px;
+  }
+
   p {
     width: 400%;
     font-size: 30px;
   }
 }
 @media screen and (max-width: 850px) {
-  .planet-image {
-    width: 40%;
-    height: 40%;
+  .apodImg {
+    width: 50%;
+  }
+
+  .image-explanation-container {
+    display: inline-block;
+  }
+
+  h2.planet {
+    font-size: 45px;
+    margin-left: 150px;
+    width: 900px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .favImg {
+    width: 200px;
+    height: 200px;
+  }
+  .planet-link-F {
+    margin-top: 700px;
+    margin-left: 0px;
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -508,6 +565,15 @@ nav ul {
     position: relative;
     align-self: last baseline;
     right: 60%;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .apodImg {
+    width: 50%;
+  }
+
+  .image-explanation-container {
+    display: inline-block;
   }
 }
 
@@ -521,10 +587,35 @@ nav ul {
     left: 20%;
   }
 
+  .pageHeading {
+    font-size: 10px;
+  }
   .planet-text {
     position: relative;
     align-self: last baseline;
     right: 50%;
+  }
+
+  h2.planet {
+    font-size: 45px;
+    margin-left: 0px;
+    width: 900px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .favImg {
+    width: 150px;
+    height: 150px;
+  }
+  .welcome {
+    margin-right: 6px;
+  }
+  .planet-link-F {
+    margin-top: 700px;
+    margin-left: 50px;
+    width: 160px;
+    height: 160px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -552,10 +643,54 @@ nav ul {
     position: relative;
     align-self: last baseline;
     right: 70%;
+    background-color: rgba(255, 255, 255, 0);
   }
+
+  .apodImg {
+    width: 50%;
+  }
+
+  .image-explanation-container {
+    display: inline-block;
+  }
+
+  h2.planet {
+    font-size: 25px;
+    width: 720px;
+    justify-content: center;
+    align-items: center;
+  }
+  .pageHeading {
+    font-size: 15px;
+  }
+
   .welcome {
-    font-size: 30px;
-    display: block;
+    font-size: 20px;
+  }
+  .loginButton {
+    font-size: 15px;
+  }
+
+  .signUpButton {
+    font-size: 15px;
+  }
+  .signOutButton {
+    font-size: 15px;
+  }
+
+  .favImg {
+    width: 100px;
+    height: 100px;
+  }
+  .planet-link-F {
+    margin-top: 700px;
+    margin-left: -60px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .text-containerF {
+    font-size: 15px;
   }
 }
 
@@ -565,7 +700,43 @@ nav ul {
   }
 
   .pageHeading {
-    font-size: smaller;
+    font-size: 5px;
+  }
+
+  .welcome {
+    font-size: 5px;
+  }
+
+  .planet-text {
+    position: relative;
+    right: 90%;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .favImg {
+    width: 70px;
+    height: 70px;
+  }
+  .planet-link-F {
+    margin-top: 300px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .text-containerF {
+    font-size: 10px;
+  }
+
+  .loginButton {
+    font-size: 10px;
+    padding: none;
+  }
+
+  .signUpButton {
+    font-size: 10px;
+  }
+  .signOutButton {
+    font-size: 10px;
   }
 
   .close-button {
@@ -583,12 +754,67 @@ nav ul {
     left: 30%;
   }
 
-  .planet-text {
-    position: relative;
-    align-self: last baseline;
-    right: 85%;
+  h2.planet {
+    font-size: 15px;
+    width: 550px;
+    justify-content: center;
+    align-items: center;
   }
+
   p {
     font-size: 20px;
+  }
+
+  .apodImg {
+    width: 50%;
+  }
+
+  .image-explanation-container {
+    display: inline-block;
+  }
+
+  @media screen and (max-width: 360px) {
+    .planet-link-F {
+      margin-top: 700px;
+      margin-left: 20px;
+      width: 100px;
+      height: 100px;
+    }
+
+    .welcome {
+      font-size: 20px;
+    }
+    h2.planet {
+      font-size: 15px;
+      width: 550px;
+      justify-content: center;
+      align-items: center;
+    }
+    h2.planet {
+      font-size: 15px;
+      width: 650px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .planet-link-circle {
+      width: 100px;
+      height: 100px;
+      font-size: 18px;
+      margin: 12px;
+      padding: 5px;
+    }
+
+    .merImg,
+    .venImg,
+    .earImg,
+    .marImg,
+    .jupImg,
+    .satImg,
+    .uraImg,
+    .nepImg {
+      width: 110px;
+      height: 110px;
+    }
   }
 }

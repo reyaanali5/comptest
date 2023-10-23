@@ -28,7 +28,7 @@ import useAuth from './hooks/useAuth';
 import ParentComponent from './Components/ParentComponent';
 
 function MainContent() {
-    
+
     const location = useLocation();
     const navigate = useNavigate();
     const [showDefault, setShowDefault] = useState(true);
@@ -50,9 +50,8 @@ function MainContent() {
 
             <div className="content-wrapper">
                 <Routes>
-                    <Route path="/" element={<ParentComponent />} />
-                    {/* <Route path="/" element={<APODImage />} /> */}
-                    {/* <Route path="/MarsWeather" element={<MarsWeather />} /> */}
+                    <Route path="/" element={<APODImage />} />
+
                     <Route path="/Login" element={<Login />} />
                     <Route path="/SignUp" element={<SignUp />} />
                     {user ? (
@@ -103,104 +102,104 @@ function App() {
                 <header className="App-header">
 
                     <div className="pageHeading"><Link to="/"> <h1>The Universe</h1></Link></div>
-                       
-                        <div className="fav">
-                            {user ? (
-                                <div className="planet-link-circle"> <Link to="/Favourites">
-                                    <div class="favImg"></div>
-                                    <div class="text-container">Favourites</div>
-                                </Link></div>
-                            ) : (
-                                null
-                            )}
-                        </div>
 
+                    <div className="fav">
                         {user ? (
-                            <div className="welcome">
-                                Welcome {auth.currentUser?.displayName} !
-                                <button className="signOutButton" onClick={handleSignOut}>Sign Out</button>
-                            </div>
+                            <div className="planet-link-F"> <Link to="/Favourites">
+                                <div class="favImg"></div>
+                                <div class="text-containerF">Favourites</div>
+                            </Link></div>
                         ) : (
-                            <div className="login">
-                                <Link to="/Login"> <button className="loginButton">Login</button></Link>
-                                <Link to="/SignUp"><button className="signUpButton">Sign Up</button></Link>
-                            </div>
+                            null
                         )}
-                    </header>
-
-                    <div className="bk-img">
                     </div>
 
-                    <div className= "scroll"></div>
+                    {user ? (
+                        <div className="welcome">
+                            Welcome {auth.currentUser?.displayName} !
+                            <button className="signOutButton" onClick={handleSignOut}>Sign Out</button>
+                        </div>
+                    ) : (
+                        <div className="login">
+                            <Link to="/Login"> <button className="loginButton">Login</button></Link>
+                            <Link to="/SignUp"><button className="signUpButton">Sign Up</button></Link>
+                        </div>
+                    )}
+                </header>
 
-                    <h2 className="planet">
-                        <ScrollLink
-                            to="scroll"
-                            spy={true}
-                            smooth={true}
-                            duration={1000}
-                        >
-                            <span class="planet-text">THE 8 PLANETS</span>
-                            
-                        </ScrollLink>
-                    </h2>
-                    
-                    <nav>
-                        <div className="nav-circle">
-                            <div className="planet-link-circle">
-                                <Link to="/Mercury">
-                                    <div class="merImg"></div>
-                                    <div class="text-container">Mercury</div>
-                                </Link>
-                            </div>
-                            <div className="planet-link-circle">
-                                <Link to="/Venus">
-                                    <div class="venImg"></div>
-                                    <div class="text-container">Venus</div>
-                                </Link>
-                            </div>
-                            <div className="planet-link-circle">
-                                <Link to="/Earth">
-                                    <div class="earImg"></div>
-                                    <div class="text-container">Earth</div>
-                                </Link>
-                            </div>
-                            <div className="planet-link-circle">
-                                <Link to="/Mars">
-                                    <div class="marImg"></div>
-                                    <div class="text-container">Mars</div>
-                                </Link>
-                            </div>
-                            <div className="planet-link-circle">
-                                <Link to="/Jupiter">
-                                    <div class="jupImg"></div>
-                                    <div class="text-container">Jupiter</div>
-                                </Link>
-                            </div>
-                            <div className="planet-link-circle">
-                                <Link to="/Saturn">
-                                    <div class="satImg"></div>
-                                    <div class="text-container">Saturn</div>
-                                </Link>
-                            </div>
-                            <div className="planet-link-circle">
-                                <Link to="/Uranus">
-                                    <div class="uraImg"></div>
-                                    <div class="text-container">Uranus</div>
-                                </Link>
-                            </div>
-                            <div className="planet-link-circle">
-                                <Link to="/Neptune">
-                                    <div class="nepImg"></div>
-                                    <div class="text-container">Neptune</div>
-                                </Link>
-                            </div>
+                <div className="bk-img">
+                </div>
 
+                <div className="scroll"></div>
+
+                <h2 className="planet">
+                    <ScrollLink
+                        to="scroll"
+                        spy={true}
+                        smooth={true}
+                        duration={1000}
+                    >
+                        <span class="planet-text">THE 8 PLANETS</span>
+
+                    </ScrollLink>
+                </h2>
+
+                <nav>
+                    <div className="nav-circle">
+                        <div className="planet-link-circle">
+                            <Link to="/Mercury">
+                                <div class="merImg"></div>
+                                <div class="text-container">Mercury</div>
+                            </Link>
+                        </div>
+                        <div className="planet-link-circle">
+                            <Link to="/Venus">
+                                <div class="venImg"></div>
+                                <div class="text-container">Venus</div>
+                            </Link>
+                        </div>
+                        <div className="planet-link-circle">
+                            <Link to="/Earth">
+                                <div class="earImg"></div>
+                                <div class="text-container">Earth</div>
+                            </Link>
+                        </div>
+                        <div className="planet-link-circle">
+                            <Link to="/Mars">
+                                <div class="marImg"></div>
+                                <div class="text-container">Mars</div>
+                            </Link>
+                        </div>
+                        <div className="planet-link-circle">
+                            <Link to="/Jupiter">
+                                <div class="jupImg"></div>
+                                <div class="text-container">Jupiter</div>
+                            </Link>
+                        </div>
+                        <div className="planet-link-circle">
+                            <Link to="/Saturn">
+                                <div class="satImg"></div>
+                                <div class="text-container">Saturn</div>
+                            </Link>
+                        </div>
+                        <div className="planet-link-circle">
+                            <Link to="/Uranus">
+                                <div class="uraImg"></div>
+                                <div class="text-container">Uranus</div>
+                            </Link>
+                        </div>
+                        <div className="planet-link-circle">
+                            <Link to="/Neptune">
+                                <div class="nepImg"></div>
+                                <div class="text-container">Neptune</div>
+                            </Link>
                         </div>
 
-                    </nav>
-                    {/* </div> */}
-                
+                    </div>
+
+                </nav>
+                {/* </div> */}
+
 
                 <MainContent />
 
