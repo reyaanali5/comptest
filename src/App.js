@@ -44,13 +44,13 @@ function MainContent() {
 
     const { user } = useAuth();
 
-    const [favorites, setFavorites] = useState([]);
+    const [favourites, setFavourites] = useState([]);
 
 
 
     const handleDelete = (index) => {
-        const removeFavourite = favorites.filter((item => item.id !== index))
-        setFavorites(removeFavourite);
+        const removeFavourite = favourites.filter((item => item.id !== index))
+        setFavourites(removeFavourite);
     };
 
 
@@ -64,8 +64,8 @@ function MainContent() {
                     <Route path="/" element={<APODImage />} />
                     <Route path="/Login" element={<Login />} />
                     <Route path="/SignUp" element={<SignUp />} />
-                    {user && <Route path="/PlanetImg" element={<PlanetImg favorites={favorites} setFavorites={setFavorites} />} />}
-                    {user && <Route path="/Favourites" element={<Favourites favorites={favorites} removeFavourites={handleDelete} />} />}
+                    {user && <Route path="/PlanetImg" element={<PlanetImg favourites={favourites} setFavourites={setFavourites} />} />}
+                    {user && <Route path="/Favourites" element={<Favourites favourites={favourites} removeFavourites={handleDelete} />} />}
                     <Route path="/Mercury" element={<Mercury />} />
                     <Route path="/Venus" element={<Venus />} />
                     <Route path="/Earth" element={<Earth />} />

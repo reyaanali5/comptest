@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const favUrl = `http://localhost:5000/api/planets`;
 
-function PlanetImg({ favorites, setFavorites }) {
+function PlanetImg({ favourites, setFavourites }) {
     const [fav, setFav] = useState([]);
 
     const navigate = useNavigate();
@@ -19,13 +19,13 @@ function PlanetImg({ favorites, setFavorites }) {
             });
     }, []);
 
-    const addToFavorites = (planetImg) => {
-        if (favorites.find((index) => index.id === planetImg.id)) { //if it finds the same id as the planet id return nothing 
+    const addToFavourites = (planetImg) => {
+        if (favourites.find((index) => index.id === planetImg.id)) { //if it finds the same id as the planet id return nothing 
             return
         }
         else {
             navigate("/Favourites")
-            setFavorites([...favorites, planetImg]); //else return planet to favourites
+            setFavourites([...favourites, planetImg]); //else return planet to favourites
         }
     };
 
@@ -37,7 +37,7 @@ function PlanetImg({ favorites, setFavorites }) {
                 {fav.map(planet => (
                     <li key={planet.id} className="planetFav-card">
                         <img className="planetFAV-img" src={planet.image} />
-                        <p><button className="addFav" onClick={() => addToFavorites(planet)}>Add to Favorites</button></p>
+                        <p><button className="addFav" onClick={() => addToFavourites(planet)}>Add to Favourites</button></p>
                     </li>
                 ))}
             </ul>
