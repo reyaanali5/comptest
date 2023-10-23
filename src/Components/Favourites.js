@@ -8,7 +8,7 @@ function Favourites({ favorites, removeFavourites }) {
 
     return (
         <div>
-            <h2>Favorites</h2>
+            <h2>Favourites</h2>
             <ul className="planetFav-row">
                 {favorites.map((planet, index) => (
                     <li key={index} className="planetFav-card"> {planet.name}
