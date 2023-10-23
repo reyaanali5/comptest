@@ -20,12 +20,12 @@ import APODImage from './Components/APODImage';
 import Login from './Components/Auth/Login';
 import SignUp from './Components/Auth/Signup';
 import Favourites from './Components/Favourites';
-import MarsWeather from './Components/MarsWeather';
+import PlanetImg from './Components/PlanetImages';
 
 import { signOut } from 'firebase/auth';
 import { auth } from './firebase';
 import useAuth from './hooks/useAuth';
-import ParentComponent from './Components/ParentComponent';
+
 
 function MainContent() {
 
@@ -54,11 +54,9 @@ function MainContent() {
 
                     <Route path="/Login" element={<Login />} />
                     <Route path="/SignUp" element={<SignUp />} />
-                    {user ? (
-                        <Route path="/Favourites" element={<Favourites />} />
-                    ) : (
-                        null
-                    )}
+                    {user && <Route path="/PlanetImg" element={<PlanetImg />} />}
+                    {user && <Route path="/Favourites" element={<Favourites />} />}
+
                     <Route path="/Mercury" element={<Mercury />} />
                     <Route path="/Venus" element={<Venus />} />
                     <Route path="/Earth" element={<Earth />} />
@@ -67,7 +65,6 @@ function MainContent() {
                     <Route path="/Saturn" element={<Saturn />} />
                     <Route path="/Uranus" element={<Uranus />} />
                     <Route path="/Neptune" element={<Neptune />} />
-                    <Route path="/MarsWeather" element={<MarsWeather />} />
                 </Routes>
             </div>
         </div>
@@ -105,10 +102,20 @@ function App() {
 
                     <div className="fav">
                         {user ? (
-                            <div className="planet-link-F"> <Link to="/Favourites">
-                                <div class="favImg"></div>
-                                <div class="text-containerF">Favourites</div>
-                            </Link></div>
+                            <div className="fav-row">
+                                <div className="planet-link-circle">
+                                    <Link to="/Favourites">
+                                        <div class="favImg"></div>
+                                        <div class="text-container">Favourites</div>
+                                    </Link>
+                                </div>
+                                <div className="planet-link-circle">
+                                    <Link to="/PlanetImg">
+                                        <div class="favImg"></div>
+                                        <div class="text-container">Images</div>
+                                    </Link>
+                                </div>
+                            </div>
                         ) : (
                             null
                         )}
