@@ -389,6 +389,7 @@ nav ul {
   text-decoration: none;
 }
 
+/* For the favourites navigation */
 .fav .planet-link-circle {
   border: 1px solid #fff;
 }
@@ -399,6 +400,45 @@ nav ul {
   justify-content: space-between;
 }
 
+.planetFAV-img {
+  width: auto;
+  height: 300px;
+}
+/* For the favourites page */
+.planetFav-row {
+  position: relative;
+  right: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.planetFav-card {
+  max-width: auto;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 2%;
+  background-color: #000;
+  margin-bottom: 50px;
+  overflow-wrap: break-word;
+}
+
+ul .planetFav-card {
+  list-style-type: none;
+}
+
+.addFav,
+.favDelete {
+  background-color: #eae8fc;
+  color: #6a186a;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+}
 /* Screen sizes should be at the bottom */
 /* Screen sizes adjustment */
 
@@ -452,8 +492,8 @@ nav ul {
 
   .planet-text {
     position: relative;
-    align-self: last baseline;
-    right: 50%;
+    margin-top: 800px;
+    right: 8%;
     background-color: rgba(255, 255, 255, 0);
   }
 
@@ -483,10 +523,6 @@ nav ul {
   .welcome {
     position: relative;
     right: 20px;
-  }
-  p {
-    width: 400%;
-    font-size: 30px;
   }
 
   .fav {
@@ -518,11 +554,6 @@ nav ul {
 }
 
 @media screen and (max-width: 800px) {
-  p {
-    width: 400%;
-    font-size: 25px;
-  }
-
   .planet-image {
     width: 40%;
     height: 40%;
@@ -551,9 +582,6 @@ nav ul {
 }
 
 @media screen and (max-width: 550px) {
-  p {
-    font-size: 16px;
-  }
   .planet-description {
     position: relative;
     align-self: first baseline;
@@ -566,7 +594,7 @@ nav ul {
   .planet-text {
     position: relative;
     align-self: last baseline;
-    right: 50%;
+    right: 15%;
   }
 
   h2.planet {
@@ -596,11 +624,6 @@ nav ul {
   .close-button {
     font-size: 35px;
     right: 5%;
-  }
-
-  p {
-    width: 300%;
-    font-size: 20px;
   }
 
   .planet-description {
@@ -686,6 +709,20 @@ nav ul {
   }
 }
 
+@media screen and (max-width: 420px) {
+  .planet-text {
+    position: relative;
+    align-self: last baseline;
+    right: 30%;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  h2.planet {
+    font-size: 25px;
+    width: 550px;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media screen and (max-width: 380px) {
   h2 {
     font-size: smaller;
@@ -735,10 +772,6 @@ nav ul {
     align-items: center;
   }
 
-  p {
-    font-size: 20px;
-  }
-
   .apodImg {
     width: 50%;
   }
@@ -754,6 +787,13 @@ nav ul {
 
   .App-header {
     height: 120px;
+  }
+
+  .planet-text {
+    position: relative;
+    margin-top: 800px;
+    right: 50%;
+    background-color: rgba(255, 255, 255, 0);
   }
 }
 @media screen and (max-width: 360px) {
@@ -811,7 +851,7 @@ nav ul {
 
   .planet-text {
     position: relative;
-    margin-top: 200px;
+    margin-top: 800px;
     right: 90%;
     background-color: rgba(255, 255, 255, 0);
   }

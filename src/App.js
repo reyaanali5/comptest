@@ -26,6 +26,8 @@ import { signOut } from 'firebase/auth';
 import { auth } from './firebase';
 import useAuth from './hooks/useAuth';
 
+import { collection, addDoc } from "firebase/firestore";
+import { db } from './firebase';
 
 function MainContent() {
 
@@ -42,6 +44,15 @@ function MainContent() {
 
     const { user } = useAuth();
 
+    const [favorites, setFavorites] = useState([]);
+
+
+
+    const handleDelete = (index) => {
+        const removeFavourite = favorites.filter((item => item.id !== index))
+        setFavorites(removeFavourite);
+    };
+
 
     return (
 
@@ -51,12 +62,10 @@ function MainContent() {
             <div className="content-wrapper">
                 <Routes>
                     <Route path="/" element={<APODImage />} />
-
                     <Route path="/Login" element={<Login />} />
                     <Route path="/SignUp" element={<SignUp />} />
-                    {user && <Route path="/PlanetImg" element={<PlanetImg />} />}
-                    {user && <Route path="/Favourites" element={<Favourites />} />}
-
+                    {user && <Route path="/PlanetImg" element={<PlanetImg favorites={favorites} setFavorites={setFavorites} />} />}
+                    {user && <Route path="/Favourites" element={<Favourites favorites={favorites} removeFavourites={handleDelete} />} />}
                     <Route path="/Mercury" element={<Mercury />} />
                     <Route path="/Venus" element={<Venus />} />
                     <Route path="/Earth" element={<Earth />} />
@@ -104,15 +113,15 @@ function App() {
                         {user ? (
                             <div className="fav-row">
                                 <div className="planet-link-circle">
-                                    <Link to="/Favourites">
-                                        <div class="favImg"></div>
-                                        <div class="text-container">Favourites</div>
-                                    </Link>
-                                </div>
-                                <div className="planet-link-circle">
                                     <Link to="/PlanetImg">
                                         <div class="favImg"></div>
                                         <div class="text-container">Images</div>
+                                    </Link>
+                                </div>
+                                <div className="planet-link-circle">
+                                    <Link to="/Favourites">
+                                        <div className="favImg"></div>
+                                        <div className="text-container">Favourites</div>
                                     </Link>
                                 </div>
                             </div>

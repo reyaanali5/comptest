@@ -1,48 +1,48 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const favUrl = `http://localhost:5000/api/planets`;
 
-function PlanetImg() {
+function PlanetImg({ favorites, setFavorites }) {
+    const [fav, setFav] = useState([]);
 
-    const [fav, setFav] = useState([]); //initializing a new state variable 
+    const navigate = useNavigate();
 
     useEffect(() => {
-        console.log('effect')
-        axios
-            .get(favUrl)
+        axios.get(favUrl)
             .then(response => {
-                console.log('promise fulfilled')
-                setFav(response.data)
+                setFav(response.data);
             })
-    }, [])
+            .catch((error) => {
+                console.error('Unable to fetch favourites', error);
+            });
+    }, []);
 
+    const addToFavorites = (planetImg) => {
+        if (favorites.find((index) => index.id === planetImg.id)) { //if it finds the same id as the planet id return nothing 
+            return
+        }
+        else {
+            navigate("/Favourites")
+            setFavorites([...favorites, planetImg]); //else return planet to favourites
+        }
+    };
 
-    setTimeout(() => {
-        window.scrollTo({
-            top: document.documentElement.scrollHeight,
-            behavior: 'smooth',
-        });
-    },);
 
     return (
         <div>
             <h2>Images of Planets</h2>
-            <p>Test</p>
-
             <ul className="planetFav-row">
                 {fav.map(planet => (
                     <li key={planet.id} className="planetFav-card">
-                        <p className='title'>{planet.name} </p>
-                        <p className='title'>{planet.description} </p>
+                        <img className="planetFAV-img" src={planet.image} />
+                        <p><button className="addFav" onClick={() => addToFavorites(planet)}>Add to Favorites</button></p>
                     </li>
-
-
                 ))}
-
             </ul>
         </div>
-    )
+    );
 }
 
 export default PlanetImg;

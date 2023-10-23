@@ -27,16 +27,6 @@ app.get('/apod', async (req, res) => {
     }
 });
 
-// app.get('/MarsWeather', async (req, res) => {
-//     try {
-//         const response = await axios.get('https://mars.nasa.gov/rss/api/?feed=weather&category=insight_temperature&feedtype=json&ver=1.0');
-//         res.json(response.data);
-//     } catch (error) {
-//         console.error("Error fetching Mars weather data from NASA's Rover: ", error.response.data);
-//         res.status(500).send(error.response.data || 'Error fetching Mars weather data');
-//     }
-// });
-
 
 app.get('/api/favplanets', (request, response) => {
     response.json(data);
