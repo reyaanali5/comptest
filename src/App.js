@@ -20,7 +20,7 @@ import APODImage from './Components/APODImage';
 import Login from './Components/Auth/Login';
 import SignUp from './Components/Auth/Signup';
 import Favourites from './Components/Favourites';
-import PlanetImg from './Components/PlanetImages';
+import SpaceImage from './Components/SpaceImages';
 
 import { signOut } from 'firebase/auth';
 import { auth } from './firebase';
@@ -66,7 +66,7 @@ function MainContent() {
                     <Route path="/" element={<APODImage />} />
                     <Route path="/Login" element={<Login />} />
                     <Route path="/SignUp" element={<SignUp />} />
-                    {user && <Route path="/PlanetImg" element={<PlanetImg favourites={favourites} setFavourites={setFavourites} />} />}
+                    {user && <Route path="/SpaceImage" element={<SpaceImage favourites={favourites} setFavourites={setFavourites} />} />}
                     {user && <Route path="/Favourites" element={<Favourites favourites={favourites} handleDelete={handleDelete} />} />}
                     {user && <Route path="/Forum" element={<Forum />} />}
 
@@ -117,7 +117,7 @@ function App() {
                         {user ? (
                             <div className="fav-row">
                                 <div className="planet-link-circle">
-                                    <Link to="/PlanetImg">
+                                    <Link to="/SpaceImage">
                                         <div class="favImg"></div>
                                         <div class="text-container">Images</div>
                                     </Link>
