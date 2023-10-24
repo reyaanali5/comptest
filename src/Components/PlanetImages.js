@@ -40,7 +40,7 @@ function PlanetImg({ favourites, setFavourites }) {
 
     return (
         <div>
-            <h2>Images of Planets</h2>
+            <h2>Images of Space</h2>
             <ul className="planetFav-row">
                 {fav.map(planet => (
                     <li key={planet.id} className="planetFav-card">
