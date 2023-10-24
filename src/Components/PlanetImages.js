@@ -5,6 +5,14 @@ import { useNavigate } from 'react-router-dom';
 const favUrl = `http://localhost:5000/api/planets`;
 
 function PlanetImg({ favourites, setFavourites }) {
+
+    setTimeout(() => {
+        window.scrollTo({
+            top: 1050,
+            behavior: 'smooth',
+        });
+    },);
+
     const [fav, setFav] = useState([]);
 
     const navigate = useNavigate();

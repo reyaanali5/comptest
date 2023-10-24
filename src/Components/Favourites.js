@@ -2,6 +2,14 @@ import React from 'react';
 
 function Favourites({ favourites, removeFavourites }) {
 
+
+    setTimeout(() => {
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth',
+        });
+    },);
+
     const handleDelete = (index) => {
         removeFavourites(index);
     };
