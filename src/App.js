@@ -29,6 +29,8 @@ import useAuth from './hooks/useAuth';
 import { collection, addDoc } from "firebase/firestore";
 import { db } from './firebase';
 
+import Forum from './Components/Forum';
+
 function MainContent() {
 
     const location = useLocation();
@@ -66,6 +68,8 @@ function MainContent() {
                     <Route path="/SignUp" element={<SignUp />} />
                     {user && <Route path="/PlanetImg" element={<PlanetImg favourites={favourites} setFavourites={setFavourites} />} />}
                     {user && <Route path="/Favourites" element={<Favourites favourites={favourites} removeFavourites={handleDelete} />} />}
+                    {user && <Route path="/forum" element={<Forum />} />}
+                    
                     <Route path="/Mercury" element={<Mercury />} />
                     <Route path="/Venus" element={<Venus />} />
                     <Route path="/Earth" element={<Earth />} />
@@ -122,6 +126,12 @@ function App() {
                                     <Link to="/Favourites">
                                         <div className="favImg"></div>
                                         <div className="text-container">Favourites</div>
+                                    </Link>
+                                </div>
+                                <div className="planet-link-circle"> 
+                                    <Link to="/forum">
+                                        <div className="forumImg"></div>
+                                        <div className="text-container">Forum</div>
                                     </Link>
                                 </div>
                             </div>
