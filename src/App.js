@@ -67,9 +67,9 @@ function MainContent() {
                     <Route path="/Login" element={<Login />} />
                     <Route path="/SignUp" element={<SignUp />} />
                     {user && <Route path="/PlanetImg" element={<PlanetImg favourites={favourites} setFavourites={setFavourites} />} />}
-                    {user && <Route path="/Favourites" element={<Favourites favourites={favourites} removeFavourites={handleDelete} />} />}
-                    {user && <Route path="/forum" element={<Forum />} />}
-                    
+                    {user && <Route path="/Favourites" element={<Favourites favourites={favourites} handleDelete={handleDelete} />} />}
+                    {user && <Route path="/Forum" element={<Forum />} />}
+
                     <Route path="/Mercury" element={<Mercury />} />
                     <Route path="/Venus" element={<Venus />} />
                     <Route path="/Earth" element={<Earth />} />
@@ -128,8 +128,8 @@ function App() {
                                         <div className="text-container">Favourites</div>
                                     </Link>
                                 </div>
-                                <div className="planet-link-circle"> 
-                                    <Link to="/forum">
+                                <div className="planet-link-circle">
+                                    <Link to="/Forum">
                                         <div className="forumImg"></div>
                                         <div className="text-container">Forum</div>
                                     </Link>

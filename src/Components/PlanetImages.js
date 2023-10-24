@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const favUrl = `http://localhost:5000/api/planets`;
 
@@ -27,7 +27,7 @@ function PlanetImg({ favourites, setFavourites }) {
             });
     }, []);
 
-    const addToFavourites = (planetImg) => {
+    const addFavourites = (planetImg) => {
         if (favourites.find((index) => index.id === planetImg.id)) { //if it finds the same id as the planet id return nothing 
             return
         }
@@ -44,8 +44,10 @@ function PlanetImg({ favourites, setFavourites }) {
             <ul className="planetFav-row">
                 {fav.map(planet => (
                     <li key={planet.id} className="planetFav-card">
-                        <img className="planetFAV-img" src={planet.image} />
-                        <p><button className="addFav" onClick={() => addToFavourites(planet)}>Add to Favourites</button></p>
+                        <Link to={planet.image}>
+                            <img className="planetFAV-img" src={planet.image} />
+                        </Link>
+                        <p><button className="addFav" onClick={() => addFavourites(planet)}>Add to Favourites</button></p>
                     </li>
                 ))}
             </ul>
