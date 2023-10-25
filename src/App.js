@@ -87,15 +87,6 @@ function MainContent() {
 
 function App() {
 
-    // const scrollToNavCircle = () => {
-    //     scroller.scrollTo("nav-circle", {
-    //         duration: 800,
-    //         delay: 0,
-    //         smooth: "easeInOutQuart", // You can adjust the smoothness and other options
-    //     });
-    // };
-    // new new new NEW NEW NEW NEW
-
     const { user } = useAuth();
 
     const handleSignOut = async () => {
@@ -116,24 +107,29 @@ function App() {
                     <div className="fav">
                         {user ? (
                             <div className="fav-row">
-                                <div className="planet-link-circle">
-                                    <Link to="/SpaceImage">
-                                        <div class="favImg"></div>
-                                        <div class="text-container">Images</div>
-                                    </Link>
-                                </div>
-                                <div className="planet-link-circle">
-                                    <Link to="/Favourites">
-                                        <div className="favImg"></div>
-                                        <div className="text-container">Favourites</div>
-                                    </Link>
-                                </div>
-                                <div className="planet-link-circle">
-                                    <Link to="/Forum">
-                                        <div className="forumImg"></div>
-                                        <div className="text-container">Forum</div>
-                                    </Link>
-                                </div>
+                                {/* <div className="buttons"> */}
+                                <button className="buttons">
+                                    <Link to="/SpaceImage">Images</Link>
+                                    </button>
+                                    <button className="buttons">
+                                    <Link to="/Favourites">Favourites</Link>
+                                     </button>
+                                     <button className="buttons">
+                                    <Link to="/Forum">Forum</Link>
+                                     </button>
+                                {/* </div> */}
+                                {/* <div className="buttons"> */}
+                                    {/* <Link to="/Favourites"> */}
+                                        {/* <div className="favImg"></div> */}
+                                        {/* <div className="b-text">Favourites</div> */}
+                                    {/* </Link> */}
+                                {/* </div> */}
+                                {/* <div className="buttons"> */}
+                                    {/* <Link to="/Forum"> */}
+                                        {/* <div className="forumImg"></div> */}
+                                        {/* <div className="b-text">Forum</div> */}
+                                    {/* </Link> */}
+                                {/* </div> */}
                             </div>
                         ) : (
                             null
