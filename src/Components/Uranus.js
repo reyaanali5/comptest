@@ -47,7 +47,7 @@ function Saturn() {
               </p>
             </div>
             <img src={uranusImage} alt="Uranus"  className="planet-image planet-image-spin" />
-            <div className="planet-text">
+            <div className="planet-stats">
               <p> <strong>Mass:</strong>  {planetData.mass} Jupiters</p>
               <p> <strong>Radius:</strong> {planetData.radius} Jupiters</p>
               <p><strong>Orbital Period: </strong>{planetData.period} Earth days</p>

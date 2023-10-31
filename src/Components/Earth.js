@@ -50,7 +50,7 @@ function Earth() {
             </div>
 
             <img src={earthImage} alt="Earth" className="planet-image planet-image-spin" />
-            <div className="planet-text">
+            <div className="planet-stats">
               <p> <strong>MASS:</strong>  {planetData.mass} Jupiters</p>
               <p> <strong>RADUIS:</strong> {planetData.radius} Jupiters</p>
               <p><strong>ORBITAL PERIOD: </strong>{planetData.period} Earth days</p>
