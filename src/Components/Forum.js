@@ -3,6 +3,14 @@ import React, { useState, useEffect } from 'react';
 import './Forum.css';
 
 function Forum() {
+
+    setTimeout(() => {
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth',
+        });
+    },);
+
     const { user } = useAuth();
     const [post, setPost] = useState('');
     const [comments, setComments] = useState([]);

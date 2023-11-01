@@ -10,7 +10,6 @@ function Favourites({ favourites, handleDelete }) {
         });
     },);
 
-
     if (favourites.length > 0) {
         return (
             <div>
