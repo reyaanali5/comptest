@@ -1,5 +1,5 @@
-import useAuth from '../hooks/useAuth'; 
-import React, { useState } from 'react';
+import useAuth from '../hooks/useAuth';
+import React, { useState, useEffect } from 'react';
 import './Forum.css';
 
 function Forum() {
@@ -7,9 +7,19 @@ function Forum() {
     const [post, setPost] = useState('');
     const [comments, setComments] = useState([]);
 
+
+    useEffect(() => {
+        const storedComments = localStorage.getItem('forumComment');
+        if (storedComments) {
+            setComments(JSON.parse(storedComments));
+        }
+    }, []);
+
     const handlePost = () => {
-        setComments([...comments, post]);
+        const newComments = [...comments, post];
+        setComments(newComments);
         setPost('');
+        localStorage.setItem('forumComment', JSON.stringify(newComments));
     };
 
     return (
@@ -26,16 +36,16 @@ function Forum() {
                 <p>You need to log in to post and comment.</p>
             )}
 
-    <div className="comments-section">
+            <div className="comments-section">
                 {comments.map((comment, index) => (
                     <div key={index} className="comment">
                         <p className="comment-text">{comment}</p>
                         {user && <button className="comment-button">Comment</button>}
-                 </div>
+                    </div>
                 ))}
             </div>
         </div>
-        );
-    }
+    );
+}
 
 export default Forum;
