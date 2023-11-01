@@ -127,11 +127,7 @@ h2.planet {
   transform: translate(-50%, -50%);
   z-index: 1;
   font-weight: bold;
-  text-shadow:
-  -1px -1px 0 #000,  
-  1px -1px 0 #000,   
-  -1px 1px 0 #000,   
-  1px 1px 0 #000;   
+  text-shadow: -3px 0 #000000, 0 3px #000000, 3px 0 #000000, 0 -3px #000000;
 }
 
 .text-containerF {
@@ -260,11 +256,10 @@ h2.planet {
 
 footer {
   padding-top: 2%;
-  background-color: #1c1935;
+  background-image: url(images/wallpaperflare.com_wallpaper.jpg);
   padding-bottom: 2%;
   clear: both;
   font-size: x-large;
- 
 }
 
 .copyright {
@@ -299,11 +294,27 @@ nav ul {
   align-items: center;
 }
 
+/* .image-container {
+  flex: 1; 
+  margin-right: 20px;
+} */
 
 .explanation-container {
   flex: 2;
 }
 
+/* Close button */
+
+.close-button {
+  position: absolute;
+  right: 50px;
+  background-color: transparent;
+  font-size: 50px;
+  color: white;
+  z-index: 10;
+  border: none;
+  cursor: pointer;
+}
 
 .content-wrapper {
   position: relative;
@@ -898,6 +909,15 @@ ul .planetFav-card {
   border-bottom: 1px solid #ddd;
 }
 
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: vertical;
+}
+
 .forumImg {
   width: 50px;
   height: 50px;
@@ -926,4 +946,55 @@ ul .planetFav-card {
   transition: color 0.3s ease-in-out;
 }
 
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
+.faq-header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  background-color: #242121;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.faq-question {
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.faq-answer {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.faq-link {
+  color: #61dafb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.faq-link:hover {
+  color: #45a0d2;
+}
