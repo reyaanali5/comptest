@@ -30,6 +30,8 @@ import { collection, addDoc } from "firebase/firestore";
 import { db } from './firebase';
 
 import Forum from './Components/Forum';
+import FAQ from './Components/FAQ';
+
 
 function MainContent() {
 
@@ -66,6 +68,8 @@ function MainContent() {
                     <Route path="/" element={<APODImage />} />
                     <Route path="/Login" element={<Login />} />
                     <Route path="/SignUp" element={<SignUp />} />
+                    <Route path="/faq" element={<FAQ />} />
+
                     {user && <Route path="/SpaceImage" element={<SpaceImage favourites={favourites} setFavourites={setFavourites} />} />}
                     {user && <Route path="/Favourites" element={<Favourites favourites={favourites} handleDelete={handleDelete} />} />}
                     {user && <Route path="/Forum" element={<Forum />} />}
@@ -117,6 +121,9 @@ function App() {
                                      <button className="buttons">
                                     <Link to="/Forum">Forum</Link>
                                      </button>
+                                     <button className="buttons">
+                                    <Link to="/faq">FAQ</Link> 
+                                </button>
                                 {/* </div> */}
                                 {/* <div className="buttons"> */}
                                     {/* <Link to="/Favourites"> */}

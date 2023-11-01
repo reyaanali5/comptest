@@ -81,7 +81,6 @@ h2.planet {
 }
 
 .planet-text {
-  background-color: #e69668;
   padding: 20px;
   border-radius: 50px;
 }
@@ -946,3 +945,5 @@ textarea {
   color: #fff;
   transition: color 0.3s ease-in-out;
 }
+
+
