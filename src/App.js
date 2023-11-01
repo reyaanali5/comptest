@@ -108,35 +108,26 @@ function App() {
                     <div className="fav">
                         {user ? (
                             <div className="fav-row">
-                                {/* <div className="buttons"> */}
+
                                 <button className="buttons">
                                     <Link to="/SpaceImage">Images</Link>
-                                    </button>
-                                    <button className="buttons">
-                                    <Link to="/Favourites">Favourites</Link>
-                                     </button>
-                                     <button className="buttons">
-                                    <Link to="/Forum">Forum</Link>
-                                     </button>
-                                     <button className="buttons">
-                                    <Link to="/faq">FAQ</Link> 
                                 </button>
-                                {/* </div> */}
-                                {/* <div className="buttons"> */}
-                                    {/* <Link to="/Favourites"> */}
-                                        {/* <div className="favImg"></div> */}
-                                        {/* <div className="b-text">Favourites</div> */}
-                                    {/* </Link> */}
-                                {/* </div> */}
-                                {/* <div className="buttons"> */}
-                                    {/* <Link to="/Forum"> */}
-                                        {/* <div className="forumImg"></div> */}
-                                        {/* <div className="b-text">Forum</div> */}
-                                    {/* </Link> */}
-                                {/* </div> */}
+                                <button className="buttons">
+                                    <Link to="/Favourites">Favourites</Link>
+                                </button>
+                                <button className="buttons">
+                                    <Link to="/Forum">Forum</Link>
+                                </button>
+                                <button className="buttons">
+                                    <Link to="/faq">FAQ</Link>
+                                </button>
                             </div>
                         ) : (
-                            null
+                            <div className="fav-row" style={{ marginLeft: 400 }}>
+                                <button className="buttons">
+                                    <Link to="/faq">FAQ</Link>
+                                </button>
+                            </div>
                         )}
                     </div>
 

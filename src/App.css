@@ -49,7 +49,6 @@
   text-shadow: 5px 5px 8px #505b72;
 }
 
-
 .login-signup {
   text-align: right;
   padding-bottom: 15vh;
@@ -347,8 +346,7 @@ nav ul {
   transition: 0.5s;
 }
 
-
-.buttons{
+.buttons {
   background-color: #1c1935;
   color: #f0f0f0;
   padding: 10px 30px;
@@ -365,9 +363,9 @@ nav ul {
   background-color: #4052bb;
 }
 
- .b-text{
-  color: #f0f0f0; 
-  text-decoration: none; 
+.b-text {
+  color: #f0f0f0;
+  text-decoration: none;
 }
 
 .signUpButton {
@@ -415,7 +413,7 @@ nav ul {
 .signUpButton a,
 .signOutButton a {
   text-decoration: none;
-  color:#ddd;
+  color: #ddd;
 }
 
 /* For the favourites navigation */
@@ -487,6 +485,10 @@ ul .planetFav-card {
 }
 
 @media screen and (max-width: 950px) {
+  .App {
+    width: fit-content;
+  }
+
   .planet-link-circle {
     width: 150px;
     height: 150px;
@@ -554,7 +556,6 @@ ul .planetFav-card {
     flex-direction: row;
     position: relative;
     right: 20px;
-
   }
 
   .fav {
@@ -743,6 +744,9 @@ ul .planetFav-card {
 }
 
 @media screen and (max-width: 420px) {
+  .App {
+    width: fit-content;
+  }
   .planet-text {
     position: relative;
     align-self: last baseline;
@@ -757,6 +761,9 @@ ul .planetFav-card {
   }
 }
 @media screen and (max-width: 380px) {
+  .App {
+    width: fit-content;
+  }
   h2 {
     font-size: smaller;
   }
@@ -870,6 +877,9 @@ ul .planetFav-card {
     right: 100px;
   }
 
+  .pageHeading {
+    font-size: 1%;
+  }
   .fav {
     margin-top: 500px;
     margin-left: -20px;

@@ -1,6 +1,14 @@
 import React from 'react';
 
 function FAQ() {
+
+    setTimeout(() => {
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth',
+        });
+    },);
+
     return (
         <div className="faq-container">
             <h1>Frequently Asked Questions</h1>
