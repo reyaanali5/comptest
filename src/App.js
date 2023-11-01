@@ -3,10 +3,7 @@ import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes, useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import './App.css';
-
-// import { animateScroll as scroll } from 'react-scroll';
 import { Link as ScrollLink, Element, scroller } from 'react-scroll';
-// NEW NEW NEW
 
 import Mercury from './Components/Mercury';
 import Venus from './Components/Venus';

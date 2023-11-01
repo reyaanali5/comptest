@@ -46,7 +46,7 @@ function Mercury() {
               </p>
             </div>
             <img src={mercuryImage} alt="Mercury" className="planet-image planet-image-spin" />
-            <div className="planet-text">
+            <div className="planet-stats">
               <p>
                 <strong>Mass:</strong> {planetData.mass} Jupiters
               </p>

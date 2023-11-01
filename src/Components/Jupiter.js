@@ -44,7 +44,7 @@ function Jupiter() {
                 Jupiter is the largest planet in our solar system, known for its massive size and the Great Red Spot.
               </p> </div>
             <img src={jupiterImage} alt="Jupiter" className="planet-image planet-image-spin"  />
-            <div className="planet-text">
+            <div className="planet-stats">
               <p> <strong>Mass:</strong>  {planetData.mass} Jupiters</p>
               <p> <strong>Radius:</strong> {planetData.radius} Jupiters</p>
               <p><strong>Orbital Period: </strong>{planetData.period} Earth days</p>

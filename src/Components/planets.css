@@ -33,14 +33,12 @@ body {
   min-height: 77vh;
   font-size: 25px;
   text-align: left;
-  margin-top: 10px;
   padding: 10px;
-  background-image: url("../images/spiral.jpg");
+  background-image: url("../images/bkgnd/bk.png");
+  background-position: center calc(50% - 9vh);
   background-size: 100% 100%;
-  /* background-color: rgba(33, 38, 48, 0.8); */
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  /* Outer glow effect */
+  /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); */
   color: #f0f0f0;
 }
 
@@ -57,7 +55,7 @@ body {
   flex: 1;
 }
 
-.planet-text {
+.planet-stats {
   max-width: 400px;
   max-width: 30%;
   flex: 1;
