@@ -789,7 +789,7 @@ textarea {
 
   .welcome {
     position: relative;
-    right: 50px;
+    right: 65px;
   }
 
   .login {
@@ -840,7 +840,7 @@ textarea {
 
   .planet-stats {
     position: relative;
-    right: 2%;
+    right: 5%;
     font-size: small;
   }
 }
