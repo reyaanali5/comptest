@@ -18,7 +18,7 @@
 
 .pageHeading {
   text-decoration: none;
-  font-size: 23px;
+  font-size: 24px;
   padding-left: 5vh;
   margin: 0;
   text-align: left;
@@ -27,10 +27,8 @@
 
 .pageHeading a {
   color: #f4ffff;
-  font-size: 2vh;
   letter-spacing: 3px;
   text-decoration: none;
-  text-align: left;
 }
 
 .login {
@@ -434,8 +432,8 @@ nav ul {
 /* For the favourites page */
 .planetFav-row {
   position: relative;
-  right: 50px;
   display: flex;
+  right: 2%;
   flex-wrap: wrap;
   margin-top: 50px;
   width: 100%;
@@ -465,439 +463,6 @@ ul .planetFav-card {
   cursor: pointer;
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
-}
-/* Screen sizes should be at the bottom */
-/* Screen sizes adjustment */
-
-@media screen and (max-width: 1024px) {
-  .planet-link-circle {
-    width: 100px;
-    height: 100px;
-    font-size: 18px;
-    margin: 12px;
-    padding: 5px;
-  }
-  .nav-circle {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  .App {
-    width: fit-content;
-  }
-
-  .planet-link-circle {
-    width: 150px;
-    height: 150px;
-    font-size: 18px;
-    margin: 12px;
-    padding: 5px;
-  }
-  .nav-circle {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .merImg,
-  .venImg,
-  .earImg,
-  .marImg,
-  .jupImg,
-  .satImg,
-  .uraImg,
-  .nepImg,
-  .favImg {
-    width: 160px;
-    height: 160px;
-  }
-
-  .planet-description {
-    position: relative;
-    align-self: first baseline;
-    left: 15%;
-  }
-
-  .planet-text {
-    position: relative;
-    margin-top: 800px;
-    right: 8%;
-    background-color: rgba(255, 255, 255, 0);
-  }
-
-  .apodImg {
-    height: auto;
-    width: 60%;
-    margin: 40px;
-    float: none;
-  }
-  .explanation {
-    padding: 5%;
-    width: fit-content;
-  }
-
-  .image-explanation-container {
-    display: inline-block;
-  }
-
-  h2.planet {
-    font-size: 45px;
-    margin-left: 200px;
-    width: 900px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .welcome {
-    /* flex:1; */
-    flex-direction: row;
-    position: relative;
-    right: 20px;
-  }
-
-  .fav {
-    margin-top: 700px;
-  }
-
-  .fav-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-}
-@media screen and (max-width: 850px) {
-  .apodImg {
-    width: 50%;
-  }
-
-  .image-explanation-container {
-    display: inline-block;
-  }
-
-  h2.planet {
-    font-size: 45px;
-    margin-left: 150px;
-    width: 900px;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .planet-image {
-    width: 40%;
-    height: 40%;
-  }
-
-  .planet-description {
-    position: relative;
-    align-self: first baseline;
-    left: 10%;
-  }
-
-  .planet-text {
-    position: relative;
-    align-self: last baseline;
-    right: 60%;
-    background-color: rgba(255, 255, 255, 0);
-  }
-
-  .apodImg {
-    width: 50%;
-  }
-
-  .image-explanation-container {
-    display: inline-block;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .planet-description {
-    position: relative;
-    align-self: first baseline;
-    left: 20%;
-  }
-
-  .pageHeading {
-    font-size: 10px;
-    text-align: left;
-  }
-  .planet-text {
-    position: relative;
-    align-self: last baseline;
-    right: 15%;
-  }
-
-  h2.planet {
-    font-size: 45px;
-    margin-left: 0px;
-    width: 900px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .favImg {
-    width: 150px;
-    height: 150px;
-  }
-  .welcome {
-    margin-right: 6px;
-  }
-  .App-header {
-    height: 200px;
-  }
-}
-@media screen and (max-width: 500px) {
-  h2 {
-    font-size: 45px;
-  }
-
-  .close-button {
-    font-size: 35px;
-    right: 5%;
-  }
-
-  .planet-description {
-    position: relative;
-    align-self: first baseline;
-    left: 20%;
-  }
-
-  .planet-text {
-    position: relative;
-    align-self: last baseline;
-    right: 70%;
-    background-color: rgba(255, 255, 255, 0);
-  }
-
-  .apodImg {
-    width: 50%;
-  }
-
-  .image-explanation-container {
-    display: inline-block;
-  }
-
-  h2.planet {
-    font-size: 25px;
-    width: 720px;
-    justify-content: center;
-    align-items: center;
-  }
-  .pageHeading {
-    font-size: 15px;
-  }
-
-  .welcome {
-    font-size: 15px;
-  }
-  .loginButton {
-    font-size: 15px;
-  }
-
-  .signUpButton {
-    font-size: 15px;
-  }
-  .signOutButton {
-    font-size: 15px;
-  }
-
-  .fav {
-    margin-top: 500px;
-    margin-left: -80px;
-  }
-
-  .fav-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .planet-link-circle {
-    width: 100px;
-    height: 100px;
-    font-size: 18px;
-    margin: 12px;
-    padding: 5px;
-  }
-  .nav-circle {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .merImg,
-  .venImg,
-  .earImg,
-  .marImg,
-  .jupImg,
-  .satImg,
-  .uraImg,
-  .nepImg,
-  .favImg {
-    width: 110px;
-    height: 110px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .App {
-    width: fit-content;
-  }
-  .planet-text {
-    position: relative;
-    align-self: last baseline;
-    right: 30%;
-    background-color: rgba(255, 255, 255, 0);
-  }
-  h2.planet {
-    font-size: 25px;
-    width: 550px;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 380px) {
-  .App {
-    width: fit-content;
-  }
-  h2 {
-    font-size: smaller;
-  }
-
-  .pageHeading {
-    font-size: 5px;
-  }
-
-  .planet-text {
-    position: relative;
-    right: 90%;
-    background-color: rgba(255, 255, 255, 0);
-  }
-
-  .loginButton {
-    font-size: 10px;
-    padding: none;
-  }
-
-  .signUpButton {
-    font-size: 10px;
-  }
-  .signOutButton {
-    font-size: 10px;
-  }
-
-  .close-button {
-    font-size: 25px;
-    right: 10px;
-  }
-  .planet-image {
-    width: 50%;
-    height: 50%;
-  }
-
-  .planet-description {
-    position: relative;
-    align-self: first baseline;
-    left: 30%;
-  }
-
-  h2.planet {
-    font-size: 15px;
-    width: 650px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .apodImg {
-    width: 50%;
-  }
-
-  .image-explanation-container {
-    display: inline-block;
-  }
-
-  .fav {
-    margin-top: 500px;
-    margin-left: 20px;
-  }
-
-  .App-header {
-    height: 120px;
-  }
-
-  .planet-text {
-    position: relative;
-    margin-top: 800px;
-    right: 50%;
-    background-color: rgba(255, 255, 255, 0);
-  }
-}
-@media screen and (max-width: 360px) {
-  .welcome {
-    position: relative;
-    font-size: 20px;
-    right: 25px;
-  }
-
-  h2.planet {
-    font-size: 15px;
-    width: 650px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .planet-link-circle {
-    width: 100px;
-    height: 100px;
-    font-size: 18px;
-    margin: 12px;
-    padding: 5px;
-  }
-
-  .merImg,
-  .venImg,
-  .earImg,
-  .marImg,
-  .jupImg,
-  .satImg,
-  .uraImg,
-  .nepImg {
-    width: 110px;
-    height: 110px;
-  }
-}
-
-@media screen and (max-width: 280px) {
-  .welcome {
-    position: relative;
-    right: 100px;
-  }
-
-  .pageHeading {
-    font-size: 1%;
-  }
-  .fav {
-    margin-top: 500px;
-    margin-left: -20px;
-  }
-
-  h2.planet {
-    margin-left: 180px;
-    width: 180px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .planet-text {
-    position: relative;
-    margin-top: 800px;
-    right: 90%;
-    background-color: rgba(255, 255, 255, 0);
-  }
 }
 
 .forum-container {
@@ -1007,4 +572,347 @@ textarea {
 
 .faq-link:hover {
   color: #45a0d2;
+}
+
+/* Screen sizes should be at the bottom */
+/* Screen sizes adjustment */
+
+@media screen and (max-width: 950px) {
+  .pageHeading {
+    font-size: small;
+    text-align: left;
+  }
+
+  h2.planet {
+    font-size: 20px;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .welcome {
+    margin-right: 24px;
+  }
+
+  .login {
+    margin-right: 100px;
+  }
+  .App-header {
+    height: 200px;
+  }
+
+  .fav {
+    position: relative;
+    left: 50px;
+    margin-top: 700px;
+  }
+
+  .fav-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .planet-link-circle {
+    width: 180px;
+    height: 180px;
+    font-size: 18px;
+    margin: 12px;
+    padding: 5px;
+  }
+  .nav-circle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .merImg,
+  .venImg,
+  .earImg,
+  .marImg,
+  .jupImg,
+  .satImg,
+  .uraImg,
+  .nepImg {
+    width: 180px;
+    height: 180px;
+  }
+
+  .apodImg {
+    width: 50%;
+  }
+
+  .image-explanation-container {
+    display: inline-block;
+  }
+
+  .planet-image {
+    width: 35%;
+    height: 35%;
+  }
+
+  .planet-description {
+    position: relative;
+    left: 2%;
+    font-size: smaller;
+  }
+
+  .planet-stats {
+    position: relative;
+    right: 2%;
+    font-size: smaller;
+  }
+
+  .close-button {
+    font-size: 30px !important;
+    right: 5%;
+  }
+
+  .planet-heading {
+    font-size: x-large !important;
+  }
+
+  .buttons {
+    border: solid 1px white;
+    font-size: xx-large;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .planet-link-circle {
+    width: 150px;
+    height: 150px;
+    font-size: 18px;
+    margin: 12px;
+    padding: 5px;
+  }
+  .nav-circle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .merImg,
+  .venImg,
+  .earImg,
+  .marImg,
+  .jupImg,
+  .satImg,
+  .uraImg,
+  .nepImg {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .pageHeading {
+    font-size: small;
+    text-align: left;
+  }
+
+  h2.planet {
+    font-size: 20px;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .welcome {
+    margin-right: 24px;
+  }
+
+  .login {
+    margin-right: 15px;
+  }
+  .App-header {
+    height: 200px;
+  }
+
+  .fav {
+    position: relative;
+    left: 0px;
+    margin-top: 700px;
+  }
+
+  .fav-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .planet-link-circle {
+    width: 100px;
+    height: 100px;
+    font-size: 18px;
+    margin: 12px;
+    padding: 5px;
+  }
+  .nav-circle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .merImg,
+  .venImg,
+  .earImg,
+  .marImg,
+  .jupImg,
+  .satImg,
+  .uraImg,
+  .nepImg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .planet-image {
+    width: 25%;
+    height: 25%;
+  }
+
+  .planet-heading {
+    font-size: larger !important;
+  }
+
+  .buttons {
+    font-size: large;
+  }
+
+  .planetFav-row {
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .pageHeading {
+    font-size: 9px;
+    text-align: left;
+  }
+
+  .welcome {
+    position: relative;
+    right: 50px;
+  }
+
+  .login {
+    margin-left: -20px;
+  }
+
+  .fav-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: -20px;
+  }
+
+  .planet-link-circle {
+    width: 100px;
+    height: 100px;
+    font-size: 18px;
+    margin: 12px;
+    padding: 5px;
+  }
+  .nav-circle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .merImg,
+  .venImg,
+  .earImg,
+  .marImg,
+  .jupImg,
+  .satImg,
+  .uraImg,
+  .nepImg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .planet-image {
+    width: 25%;
+    height: 25%;
+  }
+
+  .planet-description {
+    position: relative;
+    left: 2%;
+    font-size: small;
+  }
+
+  .planet-stats {
+    position: relative;
+    right: 2%;
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .pageHeading {
+    font-size: 5px;
+    text-align: left;
+  }
+
+  .welcome {
+    position: relative;
+    right: 95px;
+  }
+
+  .login {
+    margin-left: -20px;
+  }
+
+  .fav-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: -40px;
+  }
+
+  .planet-link-circle {
+    width: 100px;
+    height: 100px;
+    font-size: 18px;
+    margin: 12px;
+    padding: 5px;
+  }
+  .nav-circle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .merImg,
+  .venImg,
+  .earImg,
+  .marImg,
+  .jupImg,
+  .satImg,
+  .uraImg,
+  .nepImg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .planet-image {
+    width: 35%;
+    height: 35%;
+  }
+
+  .planet-description {
+    position: relative;
+    left: 4%;
+    font-size: x-small;
+  }
+
+  .planet-stats {
+    position: relative;
+    right: 18%;
+    font-size: xx-small;
+  }
+
+  .planet-heading {
+    font-size: small !important;
+  }
+
+  .planetFav-row {
+    right: 8%;
+  }
 }

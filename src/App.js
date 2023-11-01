@@ -123,7 +123,7 @@ function App() {
                                 </button>
                             </div>
                         ) : (
-                            <div className="fav-row" style={{ marginLeft: 400 }}>
+                            <div className="fav-row">
                                 <button className="buttons">
                                     <Link to="/faq">FAQ</Link>
                                 </button>
