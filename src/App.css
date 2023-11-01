@@ -800,7 +800,7 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: -20px;
+    margin-left: -25px;
   }
 
   .planet-link-circle {
