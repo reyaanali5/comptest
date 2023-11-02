@@ -580,11 +580,36 @@ textarea {
 /* Screen sizes adjustment */
 
 @media screen and (min-width: 1024px) {
-  .App {
-    width: fit-content;
-  }
   .App-header {
     height: fit-content;
+  }
+
+  .pageHeading {
+    font-size: smaller;
+  }
+
+  .planet-link-circle {
+    width: 160px;
+    height: 160px;
+    font-size: 18px;
+    margin: 12px;
+    padding: 5px;
+  }
+  .nav-circle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .merImg,
+  .venImg,
+  .earImg,
+  .marImg,
+  .jupImg,
+  .satImg,
+  .uraImg,
+  .nepImg {
+    width: 160px;
+    height: 160px;
   }
 }
 
