@@ -6,7 +6,7 @@
 }
 
 .APOD h2 {
-  padding-top: 50vh;
+  padding-top: 60vh;
 }
 
 .App {
@@ -253,7 +253,7 @@ h2.planet {
 
 footer {
   padding-top: 2%;
-  background-image: url(images/wallpaperflare.com_wallpaper.jpg);
+  background-color: #14122c;
   padding-bottom: 2%;
   clear: both;
   font-size: x-large;
