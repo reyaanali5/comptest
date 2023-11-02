@@ -66,7 +66,7 @@
 }
 
 h2.planet {
-  padding-top:100px;
+  padding-top: 100px;
   font-size: 40px;
   display: flex;
   justify-content: center;
@@ -283,7 +283,7 @@ nav ul {
 
 .explanation {
   margin: 5%;
-  margin-left:60px;
+  margin-left: 60px;
   font-size: 17px;
 }
 
@@ -658,6 +658,11 @@ textarea {
 
   .image-explanation-container {
     display: inline-block;
+  }
+
+  .explanation {
+    margin: 5%;
+    font-size: 17px;
   }
 
   .planet-image {
