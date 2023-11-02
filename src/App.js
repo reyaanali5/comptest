@@ -109,24 +109,34 @@ function App() {
                         {user ? (
                             <div className="fav-row">
 
-                                <button className="buttons">
-                                    <Link to="/SpaceImage">Images</Link>
-                                </button>
-                                <button className="buttons">
-                                    <Link to="/Favourites">Favourites</Link>
-                                </button>
-                                <button className="buttons">
-                                    <Link to="/Forum">Forum</Link>
-                                </button>
-                                <button className="buttons">
-                                    <Link to="/faq">FAQ</Link>
-                                </button>
+                                <Link to="/SpaceImage">
+                                    <button className="buttons">
+                                        Images
+                                    </button>
+                                </Link>
+                                <Link to="/Favourites">
+                                    <button className="buttons">
+                                        Favourites
+                                    </button>
+                                </Link>
+                                <Link to="/Forum">
+                                    <button className="buttons">
+                                        Forum
+                                    </button>
+                                </Link>
+                                <Link to="/faq">
+                                    <button className="buttons">
+                                        FAQ
+                                    </button>
+                                </Link>
                             </div>
                         ) : (
                             <div className="fav-row">
-                                <button className="buttons">
-                                    <Link to="/faq">FAQ</Link>
-                                </button>
+                                <Link to="/faq">
+                                    <button className="buttons">
+                                        FAQ
+                                    </button>
+                                </Link>
                             </div>
                         )}
                     </div>
