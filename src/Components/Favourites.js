@@ -17,7 +17,7 @@ function Favourites({ favourites, handleDelete }) {
                 <ul className="planetFav-row">
                     {favourites.map((planet) => (
                         <li key={planet.id} className="planetFav-card"> {planet.name}
-                            <img className="planetFAV-img" src={planet.image} />
+                            <img className="planetFAV-img" alt="space" src={planet.image} />
                             <p><button className="favDelete" onClick={() => handleDelete(planet.id)}>Remove Image</button></p>
                         </li>
                     ))}

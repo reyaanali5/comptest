@@ -45,7 +45,7 @@ function SpaceImage({ favourites, setFavourites }) {
                 {fav.map(planet => (
                     <li key={planet.id} className="planetFav-card">
                         <Link to={planet.image}>
-                            <img className="planetFAV-img" src={planet.image} />
+                            <img className="planetFAV-img" alt="space" src={planet.image} />
                         </Link>
                         <p><button className="addFav" onClick={() => addFavourites(planet)}>Add to Favourites</button></p>
                     </li>
