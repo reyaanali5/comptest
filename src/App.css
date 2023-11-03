@@ -88,6 +88,7 @@ h2.planet {
   align-items: center;
   margin-top: 20px;
   min-height: 40vh;
+  margin-bottom: 15%;
 }
 
 .planet-link-circle {
@@ -100,13 +101,6 @@ h2.planet {
   justify-content: center;
   margin: 10px;
   transition: width 1s, height 1s, background-color 1s, transform 1s;
-}
-
-.planet-link-F a {
-  font-size: 20px;
-  color: aliceblue;
-  text-decoration: none;
-  position: relative;
 }
 
 .planet-link-circle a {
@@ -234,18 +228,6 @@ h2.planet {
   transform: rotate(360deg);
 }
 
-.favImg {
-  /* background-image: url("images/star.png"); */
-  background-size: cover;
-  width: 100px;
-  height: 100px;
-  transition: transform 3s;
-}
-
-.favImg:hover {
-  transform: rotate(360deg);
-}
-
 .planet-link-circle a:active,
 .planet-link-circle a:focus {
   color: #fffbd6; /* Change current pages colour */
@@ -291,11 +273,6 @@ nav ul {
   display: flex;
   align-items: center;
 }
-
-/* .image-container {
-  flex: 1; 
-  margin-right: 20px;
-} */
 
 .explanation-container {
   flex: 2;
