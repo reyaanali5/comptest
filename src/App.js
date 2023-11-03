@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes, useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
+
 import './App.css';
-import { Link as ScrollLink, Element, scroller } from 'react-scroll';
 
 import Mercury from './Components/Mercury';
 import Venus from './Components/Venus';
@@ -18,16 +18,14 @@ import Login from './Components/Auth/Login';
 import SignUp from './Components/Auth/Signup';
 import Favourites from './Components/Favourites';
 import SpaceImage from './Components/SpaceImages';
+import Forum from './Components/Forum';
+import FAQ from './Components/FAQ';
 
 import { signOut } from 'firebase/auth';
 import { auth } from './firebase';
 import useAuth from './hooks/useAuth';
 
-import { collection, addDoc } from "firebase/firestore";
-import { db } from './firebase';
 
-import Forum from './Components/Forum';
-import FAQ from './Components/FAQ';
 
 
 function MainContent() {
