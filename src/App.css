@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/csshe2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=PT+Sans+Narrow&family=Raleway:wght@500&display=swap");
 
 .APOD {
   background-image: url(./images/bkgnd/bk.png);
@@ -18,6 +19,11 @@ html {
   /* background-image: url(./images/bkgnd/bk.png); */
   background-color: #1c1935;
   width: fit-content;
+}
+
+.welcome {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
 }
 
 .pageHeading {
@@ -312,6 +318,7 @@ nav ul {
   background-position: center;
 }
 
+/* Auth buttons */
 .loginButton {
   background-color: #e69668;
   color: #f0f0f0;
@@ -324,24 +331,6 @@ nav ul {
   font-size: 20px;
   margin: 2%;
   transition: 0.5s;
-}
-
-.buttons {
-  background-color: #1c1935;
-  color: #f0f0f0;
-  padding: 10px 30px;
-  border: #e69668;
-  border-radius: 25px;
-  cursor: pointer;
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: bold;
-  font-size: 15px;
-  min-width: 180px;
-  margin: 2%;
-  transition: 0.5s;
-}
-.buttons:hover {
-  background-color: #4052bb;
 }
 
 .signUpButton {
@@ -381,6 +370,25 @@ nav ul {
 }
 
 .signOutButton:hover {
+  background-color: #4052bb;
+}
+
+/* Header navigation buttons */
+.buttons {
+  background-color: #1c1935;
+  color: #f0f0f0;
+  padding: 10px 30px;
+  border: #e69668;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  font-size: 15px;
+  min-width: 180px;
+  margin: 2%;
+  transition: 0.5s;
+}
+.buttons:hover {
   background-color: #4052bb;
 }
 
@@ -548,6 +556,18 @@ textarea {
 
 .faq-link:hover {
   color: #45a0d2;
+}
+
+/* Search */
+
+.searchLabel {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+}
+.searchInput {
+  height: 50px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
 }
 
 /* Screen sizes should be at the bottom */

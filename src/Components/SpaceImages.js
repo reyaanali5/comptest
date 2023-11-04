@@ -6,6 +6,7 @@ const favUrl = `http://localhost:5000/api/planets`;
 
 function SpaceImage({ favourites, setFavourites }) {
 
+
     setTimeout(() => {
         window.scrollTo({
             top: 1050,
@@ -14,6 +15,7 @@ function SpaceImage({ favourites, setFavourites }) {
     },);
 
     const [fav, setFav] = useState([]);
+    const [search, setSearch] = useState('');
 
     const navigate = useNavigate();
 
@@ -32,17 +34,36 @@ function SpaceImage({ favourites, setFavourites }) {
             return
         }
         else {
-            navigate("/Favourites")
-            setFavourites([...favourites, planetImg]); //else return planet to favourites
+            navigate("/Favourites") // will navigate to the favourites page
+            setFavourites([...favourites, planetImg]); //add planetImg to favourites
         }
     };
 
 
+    const favFilter = fav.filter((planetFilter) =>
+        planetFilter.name.toLowerCase().includes(search.toLowerCase())  //it will filter by using the name on the search
+    );
+
     return (
         <div>
             <h2>Images of Space</h2>
+
+            <label htmlFor="searchbar" className='searchLabel'>
+
+                <input
+                    type="text"
+                    className='searchInput'
+                    placeholder="Search link.."
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                />
+
+                &nbsp;Search
+                <img src={require('../images/search.png')} alt="search" width="35" />
+            </label>
+
             <ul className="planetFav-row">
-                {fav.map(planet => (
+                {favFilter.map(planet => (
                     <li key={planet.id} className="planetFav-card">
                         <Link to={planet.image}>
                             <img className="planetFAV-img" alt="space" src={planet.image} />
