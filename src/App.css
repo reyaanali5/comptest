@@ -5,6 +5,9 @@
   min-height: 135vh;
 }
 
+html {
+  background-color: #1c1935;
+}
 .APOD h2 {
   padding-top: 60vh;
 }
@@ -341,11 +344,6 @@ nav ul {
   background-color: #4052bb;
 }
 
-.b-text {
-  color: #f0f0f0;
-  text-decoration: none;
-}
-
 .signUpButton {
   background-color: #e69668;
   color: #f0f0f0;
@@ -394,22 +392,19 @@ nav ul {
   color: #ddd;
 }
 
-/* For the favourites navigation */
-.fav .planet-link-circle {
-  border: 1px solid #fff;
-}
-
 .fav-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+/* For the favourites page */
+
 .planetFAV-img {
-  width: 98%;
+  width: 85%;
   height: 300px;
 }
-/* For the favourites page */
+
 .planetFav-row {
   position: relative;
   display: flex;
@@ -445,6 +440,7 @@ ul .planetFav-card {
   font-weight: bold;
 }
 
+/* Forum */
 .forum-container {
   width: 80%;
   margin: 20px auto;

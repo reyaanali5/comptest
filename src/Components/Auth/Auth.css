@@ -15,10 +15,10 @@
   padding: 20px;
   background: var(--bg-color);
   border-radius: 10px;
-  border: 2px solid var(--main-color); 
-  box-shadow: 4px 4px var(--main-color); 
-  color: var(--font-color); 
-  font-family: 'IBM Plex Mono', monospace;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  color: var(--font-color);
+  font-family: "IBM Plex Mono", monospace;
   margin-bottom: 200px;
 }
 
@@ -36,21 +36,20 @@
   margin-bottom: 20px;
   border-radius: 10px;
   border: 2px solid var(--main-color);
-  background-color: var(--bg-color); 
-  color: var(--font-color); 
-  font-family: 'IBM Plex Mono', monospace;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .login-form button {
-  background-color: var(--main-color); 
-  color: var(--font-color); 
+  background-color: var(--main-color);
+  color: var(--font-color);
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
-
 }
 
 .login-form .form-items {
@@ -77,10 +76,10 @@
   padding: 20px;
   background: var(--bg-color);
   border-radius: 10px;
-  border: 2px solid var(--main-color); 
-  box-shadow: 4px 4px var(--main-color); 
-  color: var(--font-color); 
-  font-family: 'IBM Plex Mono', monospace;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  color: var(--font-color);
+  font-family: "IBM Plex Mono", monospace;
   margin-bottom: 200px;
 }
 
@@ -98,19 +97,19 @@
   margin-bottom: 20px;
   border-radius: 10px;
   border: 2px solid var(--main-color);
-  background-color: var(--bg-color); 
-  color: var(--font-color); 
-  font-family: 'IBM Plex Mono', monospace;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .signUp-form button {
-  background-color: var(--main-color); 
-  color: var(--font-color); 
+  background-color: var(--main-color);
+  color: var(--font-color);
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
 }
 
@@ -131,4 +130,8 @@
   color: red;
   margin-top: 5px;
   font-weight: bold;
+}
+
+#root {
+  background-color: #1c1935;
 }
